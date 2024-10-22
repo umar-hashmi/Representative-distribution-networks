@@ -1,0 +1,162 @@
+clear
+
+new circuit.feeder160
+!-- Linecodes ------------------------------------------------------------------------------------------------------
+redirect linecode.txt
+!-- Loadshapes ------------------------------------------------------------------------------------------------------
+redirect Loadshape.txt
+! -TRFRMS-----------------------------------------------------------------------------------------------------------------
+
+New line.mv Bus1=sourcebus.1.2.3 Bus2=30.1.2.3 phases=3 Linecode=101 Length=5 Units=m
+New Transformer.td004454 windings=2 Buses=[30.1.2.3 60.1.2.3.4] Conns=[DELTA WYE] kVs=[22.0 0.42] kVAs=[250.0 250.0] XHL=4.0 phases=3 sub=y 
+New Reactor.Yngrnd phases=1 bus1=60.4 bus2=60.0 R=5 X=0.01 
+
+! -LINES-----------------------------------------------------------------------------------------------------------------
+
+New Line.2220 Bus1=2239.1.2.3.4 Bus2=2220.1.2.3.4 phases=3 linecode=221 Length=5.839 Units=m  
+New Line.2213_0 Bus1=2199.1.2.3.4 Bus2=2213_1.1.2.3.4 phases=3 linecode=304 Length=6.454 Units=m
+New Line.2224_1 Bus1=2224_1.1.2.3.4 Bus2=2224_2.1.2.3.4 phases=3 linecode=221 Length=51.443 Units=m
+New Line.2212_3 Bus1=2212_3.1.2.3.4 Bus2=2212_4.1.2.3.4 phases=3 linecode=301 Length=1.122 Units=m
+New Line.2221 Bus1=2221_1.1.2.3.4 Bus2=2221.1.2.3.4 phases=3 linecode=214 Length=7.833 Units=m
+New Line.2212_0 Bus1=2211.1.2.3.4 Bus2=2212_1.1.2.3.4 phases=3 linecode=301 Length=0.032 Units=m
+New Line.2191 Bus1=2211.1.2.3.4 Bus2=2191.1.2.3.4 phases=3 linecode=217 Length=20.603 Units=m
+New Line.2206_0 Bus1=2202.1.2.3.4 Bus2=2206_1.1.2.3.4 phases=3 linecode=201 Length=0.537 Units=m
+New Line.2194_1 Bus1=2194_1.1.2.3.4 Bus2=2194_2.1.2.3.4 phases=3 linecode=301 Length=0.612 Units=m
+New Line.2232 Bus1=2237.1.2.3.4 Bus2=2232.1.2.3.4 phases=3 linecode=216 Length=11.096 Units=m
+New Line.2235 Bus1=2235_3.1.2.3.4 Bus2=2235.1.2.3.4 phases=3 linecode=216 Length=24.025 Units=m
+New Line.2237_1 Bus1=2237_1.1.2.3.4 Bus2=2237_2.1.2.3.4 phases=3 linecode=216 Length=8.752 Units=m
+New Line.2229_0 Bus1=2197.1.2.3.4 Bus2=2229_1.1.2.3.4 phases=3 linecode=201 Length=0.508 Units=m
+New Line.2215_0 Bus1=2233.1.2.3.4 Bus2=2215_1.1.2.3.4 phases=3 linecode=216 Length=1.15 Units=m
+New Line.2193 Bus1=2193_1.1.2.3.4 Bus2=2193.1.2.3.4 phases=3 linecode=201 Length=0.434 Units=m
+New Line.2198_2 Bus1=2198_2.1.2.3.4 Bus2=2198_3.1.2.3.4 phases=3 linecode=216 Length=8.979 Units=m
+New Line.2210_1 Bus1=2210_1.1.2.3.4 Bus2=2210_2.1.2.3.4 phases=3 linecode=201 Length=0.297 Units=m
+New Line.2197_1 Bus1=2197_1.1.2.3.4 Bus2=2197_2.1.2.3.4 phases=3 linecode=219 Length=0.825 Units=m
+New Line.2201 Bus1=2233.1.2.3.4 Bus2=2201.1.2.3.4 phases=3 linecode=220 Length=42.949 Units=m 
+New Line.2240 Bus1=2225.1.2.3.4 Bus2=2240.1.2.3.4 phases=3 linecode=219 Length=26.018 Units=m 
+New Line.2190 Bus1=2189.1.2.3.4 Bus2=2190.1.2.3.4 phases=3 linecode=217 Length=22.346 Units=m 
+New Line.2204 Bus1=2204_1.1.2.3.4 Bus2=2204.1.2.3.4 phases=3 linecode=201 Length=3.008 Units=m
+New Line.2202 Bus1=2201.1.2.3.4 Bus2=2202.1.2.3.4 phases=3 linecode=217 Length=13.377 Units=m 
+New Line.2203 Bus1=2203_1.1.2.3.4 Bus2=2203.1.2.3.4 phases=3 linecode=201 Length=1.743 Units=m
+New Line.2235_0 Bus1=2228.1.2.3.4 Bus2=2235_1.1.2.3.4 phases=3 linecode=216 Length=0.404 Units=m
+New Line.2204_0 Bus1=2202.1.2.3.4 Bus2=2204_1.1.2.3.4 phases=3 linecode=201 Length=0.424 Units=m
+New Line.2198_0 Bus1=2232.1.2.3.4 Bus2=2198_1.1.2.3.4 phases=3 linecode=216 Length=11.624 Units=m
+New Line.2238_0 Bus1=2228.1.2.3.4 Bus2=2238_1.1.2.3.4 phases=3 linecode=221 Length=40.781 Units=m
+New Line.mv30 Bus1=source.1.2.3 Bus2=30.1.2.3 phases=3 linecode=101 Length=5.0 Units=m        
+New Line.2237 Bus1=2237_3.1.2.3.4 Bus2=2237.1.2.3.4 phases=3 linecode=216 Length=11.087 Units=m
+New Line.2198 Bus1=2198_3.1.2.3.4 Bus2=2198.1.2.3.4 phases=3 linecode=216 Length=0.774 Units=m
+New Line.2217_0 Bus1=2215.1.2.3.4 Bus2=2217_1.1.2.3.4 phases=3 linecode=201 Length=0.604 Units=m
+New Line.2219 Bus1=2218.1.2.3.4 Bus2=2219.1.2.3.4 phases=3 linecode=221 Length=17.06 Units=m  
+New Line.2210 Bus1=2210_2.1.2.3.4 Bus2=2210.1.2.3.4 phases=3 linecode=201 Length=8.498 Units=m
+New Line.2212_2 Bus1=2212_2.1.2.3.4 Bus2=2212_3.1.2.3.4 phases=3 linecode=301 Length=14.371 Units=m
+New Line.2217_1 Bus1=2217_1.1.2.3.4 Bus2=2217_2.1.2.3.4 phases=3 linecode=201 Length=0.632 Units=m
+New Line.2225_0 Bus1=2222.1.2.3.4 Bus2=2225_1.1.2.3.4 phases=3 linecode=221 Length=49.898 Units=m
+New Line.2237_0 Bus1=2195.1.2.3.4 Bus2=2237_1.1.2.3.4 phases=3 linecode=216 Length=0.01 Units=m
+New Line.2205_0 Bus1=2202.1.2.3.4 Bus2=2205_1.1.2.3.4 phases=3 linecode=201 Length=0.465 Units=m
+New Line.2197 Bus1=2197_2.1.2.3.4 Bus2=2197.1.2.3.4 phases=3 linecode=219 Length=2.288 Units=m
+New Line.2223_0 Bus1=2227.1.2.3.4 Bus2=2223_1.1.2.3.4 phases=3 linecode=214 Length=2.341 Units=m
+New Line.2192 Bus1=2235.1.2.3.4 Bus2=2192.1.2.3.4 phases=3 linecode=216 Length=27.667 Units=m 
+New Line.2209 Bus1=2189.1.2.3.4 Bus2=2209.1.2.3.4 phases=3 linecode=217 Length=36.193 Units=m 
+New Line.2217 Bus1=2217_2.1.2.3.4 Bus2=2217.1.2.3.4 phases=3 linecode=201 Length=1.165 Units=m
+New Line.2233 Bus1=2233_1.1.2.3.4 Bus2=2233.1.2.3.4 phases=3 linecode=216 Length=9.96 Units=m 
+New Line.2194_0 Bus1=2231.1.2.3.4 Bus2=2194_1.1.2.3.4 phases=3 linecode=301 Length=0.001 Units=m
+New Line.2206 Bus1=2206_1.1.2.3.4 Bus2=2206.1.2.3.4 phases=3 linecode=201 Length=6.876 Units=m
+New Line.2196 Bus1=2192.1.2.3.4 Bus2=2196.1.2.3.4 phases=3 linecode=214 Length=5.63 Units=m   
+New Line.2200_0 Bus1=2213.1.2.3.4 Bus2=2200_1.1.2.3.4 phases=3 linecode=216 Length=0.566 Units=m
+New Line.2203_0 Bus1=2201.1.2.3.4 Bus2=2203_1.1.2.3.4 phases=3 linecode=201 Length=1.968 Units=m
+New Line.2197_0 Bus1=2232.1.2.3.4 Bus2=2197_1.1.2.3.4 phases=3 linecode=219 Length=8.593 Units=m
+New Line.2199 Bus1=2199_1.1.2.3.4 Bus2=2199.1.2.3.4 phases=3 linecode=304 Length=4.86 Units=m 
+New Line.2229 Bus1=2229_2.1.2.3.4 Bus2=2229.1.2.3.4 phases=3 linecode=201 Length=12.245 Units=m
+New Line.2225 Bus1=2225_1.1.2.3.4 Bus2=2225.1.2.3.4 phases=3 linecode=221 Length=38.638 Units=m
+New Line.2241 Bus1=2225.1.2.3.4 Bus2=2241.1.2.3.4 phases=3 linecode=213 Length=1.563 Units=m  
+New Line.2208_0 Bus1=2189.1.2.3.4 Bus2=2208_1.1.2.3.4 phases=3 linecode=219 Length=9.128 Units=m
+New Line.2236 Bus1=2196.1.2.3.4 Bus2=2236.1.2.3.4 phases=3 linecode=214 Length=16.7 Units=m   
+New Line.2234_0 Bus1=2200.1.2.3.4 Bus2=2234_1.1.2.3.4 phases=3 linecode=216 Length=6.567 Units=m
+New Line.2216_0 Bus1=2215.1.2.3.4 Bus2=2216_1.1.2.3.4 phases=3 linecode=201 Length=0.523 Units=m
+New Line.2205 Bus1=2205_1.1.2.3.4 Bus2=2205.1.2.3.4 phases=3 linecode=201 Length=6.492 Units=m
+New Line.2238 Bus1=2238_1.1.2.3.4 Bus2=2238.1.2.3.4 phases=3 linecode=221 Length=39.776 Units=m
+New Line.2224_0 Bus1=2227.1.2.3.4 Bus2=2224_1.1.2.3.4 phases=3 linecode=221 Length=49.101 Units=m
+New Line.2234 Bus1=2234_1.1.2.3.4 Bus2=2234.1.2.3.4 phases=3 linecode=216 Length=1.817 Units=m
+New Line.2199_0 Bus1=2198.1.2.3.4 Bus2=2199_1.1.2.3.4 phases=3 linecode=304 Length=1.026 Units=m
+New Line.2231 Bus1=2192.1.2.3.4 Bus2=2231.1.2.3.4 phases=3 linecode=216 Length=0.587 Units=m  
+New Line.2207_0 Bus1=2190.1.2.3.4 Bus2=2207_1.1.2.3.4 phases=3 linecode=201 Length=0.606 Units=m
+New Line.2198_1 Bus1=2198_1.1.2.3.4 Bus2=2198_2.1.2.3.4 phases=3 linecode=216 Length=7.438 Units=m
+New Line.2213 Bus1=2213_1.1.2.3.4 Bus2=2213.1.2.3.4 phases=3 linecode=304 Length=3.168 Units=m
+New Line.2230_0 Bus1=2197.1.2.3.4 Bus2=2230_1.1.2.3.4 phases=3 linecode=201 Length=0.526 Units=m
+New Line.2211 Bus1=2209.1.2.3.4 Bus2=2211.1.2.3.4 phases=3 linecode=217 Length=29.263 Units=m 
+New Line.cktbk160 Bus1=60_3.1.2.3.4 Bus2=2837.1.2.3.4 phases=3 linecode=102 Length=0.5 Units=m
+New Line.2208 Bus1=2208_1.1.2.3.4 Bus2=2208.1.2.3.4 phases=3 linecode=219 Length=0.94 Units=m 
+New Line.2239 Bus1=2219.1.2.3.4 Bus2=2239.1.2.3.4 phases=3 linecode=221 Length=7.813 Units=m  
+New Line.2233_0 Bus1=2234.1.2.3.4 Bus2=2233_1.1.2.3.4 phases=3 linecode=216 Length=7.456 Units=m
+New Line.2227_0 Bus1=2225.1.2.3.4 Bus2=2227_1.1.2.3.4 phases=3 linecode=221 Length=0.014 Units=m
+New Line.2226 Bus1=2222.1.2.3.4 Bus2=2226.1.2.3.4 phases=3 linecode=301 Length=1.083 Units=m  
+New Line.2212 Bus1=2212_4.1.2.3.4 Bus2=2212.1.2.3.4 phases=3 linecode=301 Length=0.453 Units=m
+New Line.2237_2 Bus1=2237_2.1.2.3.4 Bus2=2237_3.1.2.3.4 phases=3 linecode=216 Length=0.724 Units=m
+New Line.2229_1 Bus1=2229_1.1.2.3.4 Bus2=2229_2.1.2.3.4 phases=3 linecode=201 Length=0.804 Units=m
+New Line.2235_2 Bus1=2235_2.1.2.3.4 Bus2=2235_3.1.2.3.4 phases=3 linecode=216 Length=0.526 Units=m
+New Line.2224 Bus1=2224_2.1.2.3.4 Bus2=2224.1.2.3.4 phases=3 linecode=221 Length=41.611 Units=m
+New Line.2221_0 Bus1=2239.1.2.3.4 Bus2=2221_1.1.2.3.4 phases=3 linecode=214 Length=21.155 Units=m
+New Line.2215 Bus1=2215_1.1.2.3.4 Bus2=2215.1.2.3.4 phases=3 linecode=216 Length=0.483 Units=m
+New Line.2193_0 Bus1=2231.1.2.3.4 Bus2=2193_1.1.2.3.4 phases=3 linecode=201 Length=0.474 Units=m
+New Line.2195 Bus1=2192.1.2.3.4 Bus2=2195.1.2.3.4 phases=3 linecode=216 Length=34.544 Units=m 
+New Line.feeder160 Bus1=60.1.2.3.4 Bus2=60_3.1.2.3.4 phases=3 linecode=205 Length=1.181 Units=m
+New Line.2222 Bus1=2218.1.2.3.4 Bus2=2222.1.2.3.4 phases=3 linecode=221 Length=35.458 Units=m 
+New Line.2223 Bus1=2223_2.1.2.3.4 Bus2=2223.1.2.3.4 phases=3 linecode=214 Length=4.235 Units=m
+New Line.2216 Bus1=2216_1.1.2.3.4 Bus2=2216.1.2.3.4 phases=3 linecode=201 Length=0.726 Units=m
+New Line.2235_1 Bus1=2235_1.1.2.3.4 Bus2=2235_2.1.2.3.4 phases=3 linecode=216 Length=2.705 Units=m
+New Line.2214 Bus1=2199.1.2.3.4 Bus2=2214.1.2.3.4 phases=3 linecode=304 Length=1.524 Units=m  
+New Line.2228 Bus1=2837.1.2.3.4 Bus2=2228.1.2.3.4 phases=3 linecode=216 Length=1.024 Units=m  
+New Line.2207 Bus1=2207_1.1.2.3.4 Bus2=2207.1.2.3.4 phases=3 linecode=201 Length=2.25 Units=m 
+New Line.2230 Bus1=2230_1.1.2.3.4 Bus2=2230.1.2.3.4 phases=3 linecode=201 Length=0.541 Units=m
+New Line.2200 Bus1=2200_1.1.2.3.4 Bus2=2200.1.2.3.4 phases=3 linecode=216 Length=2.569 Units=m
+New Line.2218 Bus1=2238.1.2.3.4 Bus2=2218.1.2.3.4 phases=3 linecode=221 Length=26.917 Units=m 
+New Line.2189 Bus1=2201.1.2.3.4 Bus2=2189.1.2.3.4 phases=3 linecode=220 Length=23.652 Units=m 
+New Line.2223_1 Bus1=2223_1.1.2.3.4 Bus2=2223_2.1.2.3.4 phases=3 linecode=214 Length=0.283 Units=m
+New Line.2210_0 Bus1=2209.1.2.3.4 Bus2=2210_1.1.2.3.4 phases=3 linecode=201 Length=2.325 Units=m
+New Line.2194 Bus1=2194_2.1.2.3.4 Bus2=2194.1.2.3.4 phases=3 linecode=301 Length=5.441 Units=m
+New Line.2212_1 Bus1=2212_1.1.2.3.4 Bus2=2212_2.1.2.3.4 phases=3 linecode=301 Length=0.382 Units=m
+New Line.2227 Bus1=2227_1.1.2.3.4 Bus2=2227.1.2.3.4 phases=3 linecode=221 Length=44.171 Units=m
+
+! --LOADS-----------------------------------------------------------------------------------------------------------
+
+New load.load8009 Phases=1 Bus1=2200.2.4 kV=0.23 kW=1.0 PF=0.95 daily=shape_8009
+New load.load7994 Phases=1 Bus1=2231.1.4 kV=0.23 kW=1.0 PF=0.95 daily=shape_7994
+New load.load8034 Phases=3 Bus1=2220.1.2.3.4 kV=0.4 kW=1.0 PF=0.95 daily=shape_8034
+New load.load8016 Phases=1 Bus1=2214.3.4 kV=0.23 kW=1.0 PF=0.95 daily=shape_8016
+New load.load8013 Phases=1 Bus1=2191.3.4 kV=0.23 kW=1.0 PF=0.95 daily=shape_8013
+New load.load7973 Phases=1 Bus1=2220.2.4 kV=0.23 kW=1.0 PF=0.95 daily=shape_7973
+New load.load7923 Phases=1 Bus1=2201.2.4 kV=0.23 kW=1.0 PF=0.95 daily=shape_7923
+New load.load7921 Phases=1 Bus1=2241.1.4 kV=0.23 kW=1.0 PF=0.95 daily=shape_7921
+New load.load8001 Phases=1 Bus1=2237.1.4 kV=0.23 kW=1.0 PF=0.95 daily=shape_8001
+New load.load1340 Phases=1 Bus1=2227.2.4 kV=0.23 kW=1.0 PF=0.95 daily=shape_1340
+New load.load8045 Phases=1 Bus1=2237.2.4 kV=0.23 kW=1.0 PF=0.95 daily=shape_8045
+New load.load8012 Phases=1 Bus1=2197.2.4 kV=0.23 kW=1.0 PF=0.95 daily=shape_8012
+New load.load8002 Phases=1 Bus1=2197.2.4 kV=0.23 kW=1.0 PF=0.95 daily=shape_8002
+New load.load8005 Phases=1 Bus1=2205.2.4 kV=0.23 kW=1.0 PF=0.95 daily=shape_8005
+New load.load8004 Phases=1 Bus1=2197.3.4 kV=0.23 kW=1.0 PF=0.95 daily=shape_8004
+New load.load7998 Phases=1 Bus1=2237.2.4 kV=0.23 kW=1.0 PF=0.95 daily=shape_7998
+New load.load8046 Phases=1 Bus1=2237.2.4 kV=0.23 kW=1.0 PF=0.95 daily=shape_8046
+New load.load8042 Phases=1 Bus1=2208.3.4 kV=0.23 kW=1.0 PF=0.95 daily=shape_8042
+New load.load7975 Phases=1 Bus1=2221.3.4 kV=0.23 kW=1.0 PF=0.95 daily=shape_7975
+New load.load8007 Phases=1 Bus1=2197.3.4 kV=0.23 kW=1.0 PF=0.95 daily=shape_8007
+New load.load7996 Phases=1 Bus1=2231.2.4 kV=0.23 kW=1.0 PF=0.95 daily=shape_7996
+New load.load8038 Phases=1 Bus1=2237.3.4 kV=0.23 kW=1.0 PF=0.95 daily=shape_8038
+New load.load7999 Phases=1 Bus1=2237.3.4 kV=0.23 kW=1.0 PF=0.95 daily=shape_7999
+New load.load8014 Phases=1 Bus1=2211.2.4 kV=0.23 kW=1.0 PF=0.95 daily=shape_8014
+New load.load7932 Phases=1 Bus1=2202.2.4 kV=0.23 kW=1.0 PF=0.95 daily=shape_7932
+New load.load8010 Phases=1 Bus1=2200.2.4 kV=0.23 kW=1.0 PF=0.95 daily=shape_8010
+New load.load8027 Phases=3 Bus1=2209.1.2.3.4 kV=0.4 kW=1.0 PF=0.95 daily=shape_8027
+New load.load8025 Phases=3 Bus1=2221.1.2.3.4 kV=0.4 kW=1.0 PF=0.95 daily=shape_8025
+New load.load8028 Phases=3 Bus1=2215.1.2.3.4 kV=0.4 kW=1.0 PF=0.95 daily=shape_8028
+New load.load8000 Phases=1 Bus1=2237.2.4 kV=0.23 kW=1.0 PF=0.95 daily=shape_8000
+New load.load8008 Phases=1 Bus1=2200.2.4 kV=0.23 kW=1.0 PF=0.95 daily=shape_8008
+New load.load8011 Phases=1 Bus1=2234.1.4 kV=0.23 kW=1.0 PF=0.95 daily=shape_8011
+New load.load7995 Phases=1 Bus1=2226.3.4 kV=0.23 kW=1.0 PF=0.95 daily=shape_7995
+New load.load8003 Phases=1 Bus1=2197.2.4 kV=0.23 kW=1.0 PF=0.95 daily=shape_8003
+New load.load8006 Phases=1 Bus1=2215.3.4 kV=0.23 kW=1.0 PF=0.95 daily=shape_8006
+
+! --PF -----------------------------------------------------------------------------------------------------------
+set mode=Daily number=481 stepsize=60m
+Calcvoltagebases
+solve
+BusCoords Buscord_indexed.txt
+Plot circuit Power Max=1000 dots=n labels=n subs=y C1=black 1ph=3

@@ -1,0 +1,99 @@
+clear
+
+new circuit.feeder83
+
+!-- Linecodes ------------------------------------------------------------------------------------------------------
+
+redirect linecode.txt
+
+!-- Loadshapes ------------------------------------------------------------------------------------------------------
+
+redirect Loadshape.txt
+
+! -TRFRMS-----------------------------------------------------------------------------------------------------------------
+
+New line.mv Bus1=Source Bus2=15.1.2.3 phases=3 Linecode=101 Length=5 Units=m
+New Transformer.td008656 windings=2 Buses=[15.1.2.3 45.1.2.3.4] Conns=[DELTA WYE] kVs=[22.0 0.42] kVAs=[630.0 630.0] XHL=4.0 phases=3 sub=y
+New Reactor.Yngrnd phases=1 bus1=45.4 bus2=45.0 R=5 X=0.01
+
+! -LINES-----------------------------------------------------------------------------------------------------------------
+
+New Line.303_1 Bus1=303_1.1.2.3.4 Bus2=303_2.1.2.3.4 phases=3 linecode=250 Length=3.355 Units=m
+New Line.304 Bus1=304_1.1.2.3.4 Bus2=304.1.2.3.4 phases=3 linecode=250 Length=3.874 Units=m   
+New Line.305_2 Bus1=305_2.1.2.3.4 Bus2=305_3.1.2.3.4 phases=3 linecode=250 Length=7.69 Units=m
+New Line.306_2 Bus1=306_2.1.2.3.4 Bus2=306_3.1.2.3.4 phases=3 linecode=250 Length=0.14 Units=m
+New Line.306_1 Bus1=306_1.1.2.3.4 Bus2=306_2.1.2.3.4 phases=3 linecode=250 Length=7.938 Units=m
+New Line.303_0 Bus1=2592.1.2.3.4 Bus2=303_1.1.2.3.4 phases=3 linecode=250 Length=1.16 Units=m 
+New Line.mv15 Bus1=source.1.2.3 Bus2=15.1.2.3 phases=3 linecode=101 Length=5.0 Units=m        
+New Line.303 Bus1=303_2.1.2.3.4 Bus2=303.1.2.3.4 phases=3 linecode=250 Length=10.361 Units=m  
+New Line.cktbk83 Bus1=45_1.1.2.3.4 Bus2=2592.1.2.3.4 phases=3 linecode=102 Length=0.5 Units=m 
+New Line.306_0 Bus1=305.1.2.3.4 Bus2=306_1.1.2.3.4 phases=3 linecode=250 Length=6.696 Units=m 
+New Line.305_0 Bus1=304.1.2.3.4 Bus2=305_1.1.2.3.4 phases=3 linecode=250 Length=18.711 Units=m
+New Line.305 Bus1=305_3.1.2.3.4 Bus2=305.1.2.3.4 phases=3 linecode=250 Length=3.063 Units=m   
+New Line.305_1 Bus1=305_1.1.2.3.4 Bus2=305_2.1.2.3.4 phases=3 linecode=250 Length=7.295 Units=m
+New Line.307 Bus1=305.1.2.3.4 Bus2=307.1.2.3.4 phases=3 linecode=250 Length=0.58 Units=m      
+New Line.304_0 Bus1=303.1.2.3.4 Bus2=304_1.1.2.3.4 phases=3 linecode=250 Length=10.562 Units=m
+New Line.306 Bus1=306_4.1.2.3.4 Bus2=306.1.2.3.4 phases=3 linecode=250 Length=1.742 Units=m   
+New Line.feeder83 Bus1=45.1.2.3.4 Bus2=45_1.1.2.3.4 phases=3 linecode=205 Length=6.349 Units=m
+New Line.306_3 Bus1=306_3.1.2.3.4 Bus2=306_4.1.2.3.4 phases=3 linecode=250 Length=2.085 Units=m
+
+! --LOADS-----------------------------------------------------------------------------------------------------------
+
+New load.load5026 Phases=1 Bus1=303.2.4 kV=0.23 kW=1.0 PF=0.95 daily=shape_5026
+New load.load4985 Phases=1 Bus1=307.3.4 kV=0.23 kW=1.0 PF=0.95 daily=shape_4985
+New load.load5021 Phases=1 Bus1=307.3.4 kV=0.23 kW=1.0 PF=0.95 daily=shape_5021
+New load.load5016 Phases=1 Bus1=307.3.4 kV=0.23 kW=1.0 PF=0.95 daily=shape_5016
+New load.load5053 Phases=1 Bus1=303.1.4 kV=0.23 kW=1.0 PF=0.95 daily=shape_5053
+New load.load5014 Phases=1 Bus1=307.1.4 kV=0.23 kW=1.0 PF=0.95 daily=shape_5014
+New load.load5027 Phases=1 Bus1=303.3.4 kV=0.23 kW=1.0 PF=0.95 daily=shape_5027
+New load.load5022 Phases=1 Bus1=307.3.4 kV=0.23 kW=1.0 PF=0.95 daily=shape_5022
+New load.load5218 Phases=3 Bus1=304.1.2.3.4 kV=0.4 kW=1.0 PF=0.95 daily=shape_5218
+New load.load5069 Phases=1 Bus1=304.2.4 kV=0.23 kW=1.0 PF=0.95 daily=shape_5069
+New load.load5003 Phases=1 Bus1=307.3.4 kV=0.23 kW=1.0 PF=0.95 daily=shape_5003
+New load.load5015 Phases=1 Bus1=307.2.4 kV=0.23 kW=1.0 PF=0.95 daily=shape_5015
+New load.load5029 Phases=1 Bus1=303.3.4 kV=0.23 kW=1.0 PF=0.95 daily=shape_5029
+New load.load5024 Phases=1 Bus1=307.1.4 kV=0.23 kW=1.0 PF=0.95 daily=shape_5024
+New load.load5028 Phases=1 Bus1=303.1.4 kV=0.23 kW=1.0 PF=0.95 daily=shape_5028
+New load.load5066 Phases=1 Bus1=304.1.4 kV=0.23 kW=1.0 PF=0.95 daily=shape_5066
+New load.load5060 Phases=1 Bus1=304.2.4 kV=0.23 kW=1.0 PF=0.95 daily=shape_5060
+New load.load5195 Phases=3 Bus1=307.1.2.3.4 kV=0.4 kW=1.0 PF=0.95 daily=shape_5195
+New load.load5071 Phases=1 Bus1=304.1.4 kV=0.23 kW=1.0 PF=0.95 daily=shape_5071
+New load.load5017 Phases=1 Bus1=307.1.4 kV=0.23 kW=1.0 PF=0.95 daily=shape_5017
+New load.load4999 Phases=1 Bus1=307.1.4 kV=0.23 kW=1.0 PF=0.95 daily=shape_4999
+New load.load4998 Phases=1 Bus1=307.2.4 kV=0.23 kW=1.0 PF=0.95 daily=shape_4998
+New load.load5004 Phases=1 Bus1=307.3.4 kV=0.23 kW=1.0 PF=0.95 daily=shape_5004
+New load.load5193 Phases=1 Bus1=303.2.4 kV=0.23 kW=1.0 PF=0.95 daily=shape_5193
+New load.load5058 Phases=1 Bus1=304.2.4 kV=0.23 kW=1.0 PF=0.95 daily=shape_5058
+New load.load5064 Phases=1 Bus1=304.3.4 kV=0.23 kW=1.0 PF=0.95 daily=shape_5064
+New load.load5211 Phases=3 Bus1=304.1.2.3.4 kV=0.4 kW=1.0 PF=0.95 daily=shape_5211
+New load.load5056 Phases=1 Bus1=303.2.4 kV=0.23 kW=1.0 PF=0.95 daily=shape_5056
+New load.load5055 Phases=1 Bus1=303.2.4 kV=0.23 kW=1.0 PF=0.95 daily=shape_5055
+New load.load5059 Phases=1 Bus1=304.2.4 kV=0.23 kW=1.0 PF=0.95 daily=shape_5059
+New load.load5057 Phases=1 Bus1=304.3.4 kV=0.23 kW=1.0 PF=0.95 daily=shape_5057
+New load.load5018 Phases=1 Bus1=307.2.4 kV=0.23 kW=1.0 PF=0.95 daily=shape_5018
+New load.load5227 Phases=1 Bus1=303.1.4 kV=0.23 kW=1.0 PF=0.95 daily=shape_5227
+New load.load5068 Phases=1 Bus1=304.1.4 kV=0.23 kW=1.0 PF=0.95 daily=shape_5068
+New load.load5031 Phases=1 Bus1=303.3.4 kV=0.23 kW=1.0 PF=0.95 daily=shape_5031
+New load.load5023 Phases=1 Bus1=307.2.4 kV=0.23 kW=1.0 PF=0.95 daily=shape_5023
+New load.load5030 Phases=1 Bus1=303.2.4 kV=0.23 kW=1.0 PF=0.95 daily=shape_5030
+New load.load5020 Phases=1 Bus1=307.1.4 kV=0.23 kW=1.0 PF=0.95 daily=shape_5020
+New load.load5065 Phases=1 Bus1=304.1.4 kV=0.23 kW=1.0 PF=0.95 daily=shape_5065
+New load.load5033 Phases=1 Bus1=303.1.4 kV=0.23 kW=1.0 PF=0.95 daily=shape_5033
+New load.load5054 Phases=1 Bus1=303.1.4 kV=0.23 kW=1.0 PF=0.95 daily=shape_5054
+New load.load5019 Phases=1 Bus1=307.2.4 kV=0.23 kW=1.0 PF=0.95 daily=shape_5019
+New load.load5061 Phases=1 Bus1=304.3.4 kV=0.23 kW=1.0 PF=0.95 daily=shape_5061
+New load.load5194 Phases=3 Bus1=307.1.2.3.4 kV=0.4 kW=1.0 PF=0.95 daily=shape_5194
+New load.load5197 Phases=3 Bus1=303.1.2.3.4 kV=0.4 kW=1.0 PF=0.95 daily=shape_5197
+New load.load5025 Phases=1 Bus1=303.3.4 kV=0.23 kW=1.0 PF=0.95 daily=shape_5025
+New load.load5063 Phases=1 Bus1=304.2.4 kV=0.23 kW=1.0 PF=0.95 daily=shape_5063
+New load.load5062 Phases=1 Bus1=304.3.4 kV=0.23 kW=1.0 PF=0.95 daily=shape_5062
+New load.load5070 Phases=1 Bus1=304.3.4 kV=0.23 kW=1.0 PF=0.95 daily=shape_5070
+New load.load5032 Phases=1 Bus1=303.3.4 kV=0.23 kW=1.0 PF=0.95 daily=shape_5032
+New load.load5067 Phases=1 Bus1=304.3.4 kV=0.23 kW=1.0 PF=0.95 daily=shape_5067
+
+! --PF -----------------------------------------------------------------------------------------------------------
+set mode=Daily number=481 stepsize=60m
+Calcvoltagebases
+solve
+BusCoords Buscord_indexed.txt
+Plot circuit Power Max=1000 dots=n labels=n subs=y C1=black 1ph=3

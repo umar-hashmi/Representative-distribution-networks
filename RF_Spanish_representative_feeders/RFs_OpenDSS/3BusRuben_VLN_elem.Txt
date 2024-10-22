@@ -1,0 +1,58 @@
+
+NODE-GROUND VOLTAGES BY CIRCUIT ELEMENT
+
+Power Delivery Elements
+
+Bus       (node ref)  Phase    Magnitude, kV (pu)    Angle
+
+ELEMENT = "Vsource.SOURCE"
+SOURCEBUS  (  1)    1           66.404 (   287.5) /_    0.0
+SOURCEBUS  (  2)    2           66.376 (   287.4) /_ -120.1
+SOURCEBUS  (  3)    3           66.361 (   287.4) /_  119.9
+------------
+SOURCEBUS  (  0)    0                0 (       0) /_    0.0
+SOURCEBUS  (  0)    0                0 (       0) /_    0.0
+SOURCEBUS  (  0)    0                0 (       0) /_    0.0
+
+ELEMENT = "Line.L1"
+SOURCEBUS  (  1)    1           66.404 (   287.5) /_    0.0
+SOURCEBUS  (  2)    2           66.376 (   287.4) /_ -120.1
+SOURCEBUS  (  3)    3           66.361 (   287.4) /_  119.9
+------------
+MIDDLEBUS  (  4)    1           66.404 (   287.5) /_    0.0
+MIDDLEBUS  (  5)    2           66.374 (   287.4) /_ -120.1
+MIDDLEBUS  (  6)    3            66.36 (   287.3) /_  119.9
+
+ELEMENT = "Line.L2"
+MIDDLEBUS  (  4)    1           66.404 (   287.5) /_    0.0
+MIDDLEBUS  (  5)    2           66.374 (   287.4) /_ -120.1
+MIDDLEBUS  (  6)    3            66.36 (   287.3) /_  119.9
+------------
+LOADBUS    (  7)    1           66.405 (   287.5) /_    0.0
+LOADBUS    (  8)    2           66.372 (   287.4) /_ -120.1
+LOADBUS    (  9)    3           66.358 (   287.3) /_  119.9
+
+= = = = = = = = = = = = = = = = = = =  = = = = = = = = = = =  = =
+
+Power Conversion Elements
+
+Bus       (node ref)  Phase    Magnitude, kV (pu)    Angle
+
+ELEMENT = "Load.LO1"
+LOADBUS    (  7)    1           66.405 (   287.5) /_    0.0
+LOADBUS    (  8)    2           66.372 (   287.4) /_ -120.1
+LOADBUS    (  9)    3           66.358 (   287.3) /_  119.9
+LOADBUS    (  0)    0                0 (       0) /_    0.0
+
+ELEMENT = "Load.LO2"
+LOADBUS    (  8)    2           66.372 (   287.4) /_ -120.1
+LOADBUS    (  8)    2           66.372 (   287.4) /_ -120.1
+LOADBUS    (  9)    3           66.358 (   287.3) /_  119.9
+LOADBUS    (  0)    0                0 (       0) /_    0.0
+
+ELEMENT = "Load.LO3"
+LOADBUS    (  9)    3           66.358 (   287.3) /_  119.9
+LOADBUS    (  8)    2           66.372 (   287.4) /_ -120.1
+LOADBUS    (  9)    3           66.358 (   287.3) /_  119.9
+LOADBUS    (  0)    0                0 (       0) /_    0.0
+

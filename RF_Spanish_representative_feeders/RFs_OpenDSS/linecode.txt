@@ -1,0 +1,144 @@
+New LineCode.250 nphases=4 baseFreq=50 units=km
+~ rmatrix = [0.210000 | 0     0.210000  |  0  0   0.210000 |  0  0  0 0.210000]
+~ xmatrix = [ 0.075000| 0     0.075000  |  0  0   0.075000|  0  0  0 0.075000]
+New LineCode.350 nphases=4 baseFreq=50 units=km
+~ rmatrix = [0.210000 | 0     0.210000  |  0  0   0.210000 |  0  0  0 0.210000]
+~ xmatrix = [ 0.075000| 0     0.075000  |  0  0   0.075000|  0  0  0 0.075000]
+New LineCode.201 nphases=4 baseFreq=50 units=km
+~ rmatrix = [1.230000 | 0     1.230000  |  0  0   1.230000 |  0  0  0 1.230000]
+~ xmatrix = [ 0.080000| 0     0.080000  |  0  0   0.080000|  0  0  0 0.080000]
+New LineCode.301 nphases=4 baseFreq=50 units=km
+~ rmatrix = [1.230000 | 0     1.230000  |  0  0   1.230000 |  0  0  0 1.230000]
+~ xmatrix = [ 0.080000| 0     0.080000  |  0  0   0.080000|  0  0  0 0.080000]
+New LineCode.202 nphases=4 baseFreq=50 units=km
+~ rmatrix = [2.140000 | 0     2.140000  |  0  0   2.140000 |  0  0  0 2.140000]
+~ xmatrix = [ 0.090000| 0     0.090000  |  0  0   0.090000|  0  0  0 0.090000]
+New LineCode.302 nphases=4 baseFreq=50 units=km
+~ rmatrix = [2.140000 | 0     2.140000  |  0  0   2.140000 |  0  0  0 2.140000]
+~ xmatrix = [ 0.090000| 0     0.090000  |  0  0   0.090000|  0  0  0 0.090000]
+New LineCode.203 nphases=4 baseFreq=50 units=km
+~ rmatrix = [1.340000 | 0     1.340000  |  0  0   1.340000 |  0  0  0 1.340000]
+~ xmatrix = [ 0.097000| 0     0.097000  |  0  0   0.097000|  0  0  0 0.097000]
+New LineCode.303 nphases=4 baseFreq=50 units=km
+~ rmatrix = [1.538000 | 0     1.538000  |  0  0   1.538000 |  0  0  0 1.538000]
+~ xmatrix = [ 0.095000| 0     0.095000  |  0  0   0.095000|  0  0  0 0.095000]
+New LineCode.204 nphases=4 baseFreq=50 units=km
+~ rmatrix = [0.230905 | 0     0.230905  |  0  0   0.230905 |  0  0  0 0.358688]
+~ xmatrix = [ 0.085000| 0     0.085000  |  0  0   0.085000|  0  0  0 0.089000]
+New LineCode.304 nphases=4 baseFreq=50 units=km
+~ rmatrix = [0.264113 | 0     0.264113  |  0  0   0.264113 |  0  0  0 0.410272]
+~ xmatrix = [ 0.082000| 0     0.082000  |  0  0   0.082000|  0  0  0 0.083000]
+New LineCode.205 nphases=4 baseFreq=50 units=km
+~ rmatrix = [0.160263 | 0     0.160263  |  0  0   0.160263 |  0  0  0 0.230905]
+~ xmatrix = [ 0.079000| 0     0.079000  |  0  0   0.079000|  0  0  0 0.085000]
+New LineCode.305 nphases=4 baseFreq=50 units=km
+~ rmatrix = [0.160263 | 0     0.160263  |  0  0   0.160263 |  0  0  0 0.264113]
+~ xmatrix = [ 0.079000| 0     0.079000  |  0  0   0.079000|  0  0  0 0.082000]
+New LineCode.206 nphases=4 baseFreq=50 units=km
+~ rmatrix = [0.160263 | 0     0.160263  |  0  0   0.160263 |  0  0  0 0.358688]
+~ xmatrix = [ 0.079000| 0     0.079000  |  0  0   0.079000|  0  0  0 0.089000]
+New LineCode.306 nphases=4 baseFreq=50 units=km
+~ rmatrix = [0.160263 | 0     0.160263  |  0  0   0.160263 |  0  0  0 0.410272]
+~ xmatrix = [ 0.079000| 0     0.079000  |  0  0   0.079000|  0  0  0 0.083000]
+New LineCode.207 nphases=4 baseFreq=50 units=km
+~ rmatrix = [1.340000 | 0     1.340000  |  0  0   1.340000 |  0  0  0 1.340000]
+~ xmatrix = [ 0.097000| 0     0.097000  |  0  0   0.097000|  0  0  0 0.097000]
+New LineCode.307 nphases=4 baseFreq=50 units=km
+~ rmatrix = [1.538000 | 0     1.538000  |  0  0   1.538000 |  0  0  0 1.538000]
+~ xmatrix = [ 0.095000| 0     0.095000  |  0  0   0.095000|  0  0  0 0.095000]
+New LineCode.208 nphases=4 baseFreq=50 units=km
+~ rmatrix = [0.718497 | 0     0.718497  |  0  0   0.718497 |  0  0  0 0.718497]
+~ xmatrix = [ 0.093000| 0     0.093000  |  0  0   0.093000|  0  0  0 0.093000]
+New LineCode.308 nphases=4 baseFreq=50 units=km
+~ rmatrix = [0.718497 | 0     0.718497  |  0  0   0.718497 |  0  0  0 0.718497]
+~ xmatrix = [ 0.093000| 0     0.093000  |  0  0   0.093000|  0  0  0 0.093000]
+New LineCode.209 nphases=4 baseFreq=50 units=km
+~ rmatrix = [0.358688 | 0     0.358688  |  0  0   0.358688 |  0  0  0 0.358688]
+~ xmatrix = [ 0.089000| 0     0.089000  |  0  0   0.089000|  0  0  0 0.089000]
+New LineCode.309 nphases=4 baseFreq=50 units=km
+~ rmatrix = [0.410272 | 0     0.410272  |  0  0   0.410272 |  0  0  0 0.410272]
+~ xmatrix = [ 0.083000| 0     0.083000  |  0  0   0.083000|  0  0  0 0.083000]
+New LineCode.210 nphases=4 baseFreq=50 units=km
+~ rmatrix = [1.230000 | 0     1.230000  |  0  0   1.230000 |  0  0  0 1.230000]
+~ xmatrix = [ 0.080000| 0     0.080000  |  0  0   0.080000|  0  0  0 0.080000]
+New LineCode.310 nphases=4 baseFreq=50 units=km
+~ rmatrix = [1.230000 | 0     1.230000  |  0  0   1.230000 |  0  0  0 1.230000]
+~ xmatrix = [ 0.080000| 0     0.080000  |  0  0   0.080000|  0  0  0 0.080000]
+New LineCode.211 nphases=4 baseFreq=50 units=km
+~ rmatrix = [9.900000 | 0     9.900000  |  0  0   9.900000 |  0  0  0 9.900000]
+~ xmatrix = [ 0.075000| 0     0.075000  |  0  0   0.075000|  0  0  0 0.075000]
+New LineCode.311 nphases=4 baseFreq=50 units=km
+~ rmatrix = [9.900000 | 0     9.900000  |  0  0   9.900000 |  0  0  0 9.900000]
+~ xmatrix = [ 0.075000| 0     0.075000  |  0  0   0.075000|  0  0  0 0.075000]
+New LineCode.212 nphases=4 baseFreq=50 units=km
+~ rmatrix = [4.950000 | 0     4.950000  |  0  0   4.950000 |  0  0  0 4.950000]
+~ xmatrix = [ 0.075000| 0     0.075000  |  0  0   0.075000|  0  0  0 0.075000]
+New LineCode.312 nphases=4 baseFreq=50 units=km
+~ rmatrix = [4.950000 | 0     4.950000  |  0  0   4.950000 |  0  0  0 4.950000]
+~ xmatrix = [ 0.075000| 0     0.075000  |  0  0   0.075000|  0  0  0 0.075000]
+New LineCode.213 nphases=4 baseFreq=50 units=km
+~ rmatrix = [3.300000 | 0     3.300000  |  0  0   3.300000 |  0  0  0 3.300000]
+~ xmatrix = [ 0.075000| 0     0.075000  |  0  0   0.075000|  0  0  0 0.075000]
+New LineCode.313 nphases=4 baseFreq=50 units=km
+~ rmatrix = [3.300000 | 0     3.300000  |  0  0   3.300000 |  0  0  0 3.300000]
+~ xmatrix = [ 0.075000| 0     0.075000  |  0  0   0.075000|  0  0  0 0.075000]
+New LineCode.214 nphases=4 baseFreq=50 units=km
+~ rmatrix = [2.140000 | 0     2.140000  |  0  0   2.140000 |  0  0  0 2.140000]
+~ xmatrix = [ 0.090000| 0     0.090000  |  0  0   0.090000|  0  0  0 0.090000]
+New LineCode.314 nphases=4 baseFreq=50 units=km
+~ rmatrix = [2.140000 | 0     2.140000  |  0  0   2.140000 |  0  0  0 2.140000]
+~ xmatrix = [ 0.090000| 0     0.090000  |  0  0   0.090000|  0  0  0 0.090000]
+New LineCode.215 nphases=4 baseFreq=50 units=km
+~ rmatrix = [0.230905 | 0     0.230905  |  0  0   0.230905 |  0  0  0 0.390000]
+~ xmatrix = [ 0.085000| 0     0.085000  |  0  0   0.085000|  0  0  0 0.090000]
+New LineCode.315 nphases=4 baseFreq=50 units=km
+~ rmatrix = [0.264113 | 0     0.264113  |  0  0   0.264113 |  0  0  0 0.450600]
+~ xmatrix = [ 0.082000| 0     0.082000  |  0  0   0.082000|  0  0  0 0.084000]
+New LineCode.216 nphases=4 baseFreq=50 units=km
+~ rmatrix = [0.230905 | 0     0.230905  |  0  0   0.230905 |  0  0  0 0.358688]
+~ xmatrix = [ 0.085000| 0     0.085000  |  0  0   0.085000|  0  0  0 0.089000]
+New LineCode.316 nphases=4 baseFreq=50 units=km
+~ rmatrix = [0.264113 | 0     0.264113  |  0  0   0.264113 |  0  0  0 0.410272]
+~ xmatrix = [ 0.082000| 0     0.082000  |  0  0   0.082000|  0  0  0 0.083000]
+New LineCode.217 nphases=4 baseFreq=50 units=km
+~ rmatrix = [1.340000 | 0     1.340000  |  0  0   1.340000 |  0  0  0 0.657900]
+~ xmatrix = [ 0.097000| 0     0.097000  |  0  0   0.097000|  0  0  0 0.090000]
+New LineCode.317 nphases=4 baseFreq=50 units=km
+~ rmatrix = [1.538000 | 0     1.538000  |  0  0   1.538000 |  0  0  0 0.657900]
+~ xmatrix = [ 0.095000| 0     0.095000  |  0  0   0.095000|  0  0  0 0.090000]
+New LineCode.218 nphases=4 baseFreq=50 units=km
+~ rmatrix = [0.907300 | 0     0.907300  |  0  0   0.907300 |  0  0  0 0.657900]
+~ xmatrix = [ 0.095000| 0     0.095000  |  0  0   0.095000|  0  0  0 0.090000]
+New LineCode.318 nphases=4 baseFreq=50 units=km
+~ rmatrix = [0.907318 | 0     0.907318  |  0  0   0.907318 |  0  0  0 0.657900]
+~ xmatrix = [ 0.095000| 0     0.095000  |  0  0   0.095000|  0  0  0 0.090000]
+New LineCode.219 nphases=4 baseFreq=50 units=km
+~ rmatrix = [0.718497 | 0     0.718497  |  0  0   0.718497 |  0  0  0 0.657900]
+~ xmatrix = [ 0.093000| 0     0.093000  |  0  0   0.093000|  0  0  0 0.090000]
+New LineCode.319 nphases=4 baseFreq=50 units=km
+~ rmatrix = [0.718497 | 0     0.718497  |  0  0   0.718497 |  0  0  0 0.657900]
+~ xmatrix = [ 0.093000| 0     0.093000  |  0  0   0.093000|  0  0  0 0.090000]
+New LineCode.220 nphases=4 baseFreq=50 units=km
+~ rmatrix = [0.453900 | 0     0.453900  |  0  0   0.453900 |  0  0  0 0.657900]
+~ xmatrix = [ 0.091000| 0     0.091000  |  0  0   0.091000|  0  0  0 0.090000]
+New LineCode.320 nphases=4 baseFreq=50 units=km
+~ rmatrix = [0.515000 | 0     0.515000  |  0  0   0.515000 |  0  0  0 0.657900]
+~ xmatrix = [ 0.085000| 0     0.085000  |  0  0   0.085000|  0  0  0 0.090000]
+New LineCode.221 nphases=4 baseFreq=50 units=km
+~ rmatrix = [0.358688 | 0     0.358688  |  0  0   0.358688 |  0  0  0 0.657900]
+~ xmatrix = [ 0.089000| 0     0.089000  |  0  0   0.089000|  0  0  0 0.090000]
+New LineCode.321 nphases=4 baseFreq=50 units=km
+~ rmatrix = [0.410272 | 0     0.410272  |  0  0   0.410272 |  0  0  0 0.657900]
+~ xmatrix = [ 0.083000| 0     0.083000  |  0  0   0.083000|  0  0  0 0.090000]
+New LineCode.222 nphases=4 baseFreq=50 units=km
+~ rmatrix = [2.140000 | 0     2.140000  |  0  0   2.140000 |  0  0  0 2.140000]
+~ xmatrix = [ 0.090000| 0     0.090000  |  0  0   0.090000|  0  0  0 0.090000]
+New LineCode.322 nphases=4 baseFreq=50 units=km
+~ rmatrix = [2.140000 | 0     2.140000  |  0  0   2.140000 |  0  0  0 2.140000]
+~ xmatrix = [ 0.090000| 0     0.090000  |  0  0   0.090000|  0  0  0 0.090000]
+New LineCode.101 nphases=3 baseFreq=50 units=km
+~ rmatrix = [0.050000 | 0     0.050000  |  0  0   0.050000] 
+~ xmatrix = [ 0.050000| 0     0.050000  |  0  0   0.050000] 
+New LineCode.102 nphases=4 baseFreq=50 units=km
+~ rmatrix = [0.050000 | 0     0.050000  |  0  0   0.050000 |  0  0  0 0.050000]
+~ xmatrix = [ 0.050000| 0     0.050000  |  0  0   0.050000|  0  0  0 0.050000]
