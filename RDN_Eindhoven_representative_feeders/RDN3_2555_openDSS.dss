@@ -1,0 +1,68 @@
+clear
+New Circuit.RDN1 basekv=10 pu=1.0
+edit Vsource.Source bus1=source basekv=10 pu=1.0001 phases=3 ISC3=9000  ISC1=5000
+! Transformer data 
+new transformer.5 buses = [Source.1.2.3.0 2555.1.2.3.0] phases=3 windings=2 XHL = 4.0 %LoadLoss=1.2 Conns=[WYE WYE] kVs=[10.0 0.4] kVAs=[250000.0 250000.0] 
+! Linecodes data 
+new linecode.powersystem_db_lv_NAYY_4x50_SE nphases=3 
+~ rmatrix = [0.642 | 0.0 0.642 | 0.0 0.0 0.642] 
+~ xmatrix = [0.083 | 0.0 0.083 | 0.0 0.0 0.083] 
+~ cmatrix = [210.0 | 0.0 210.0 | 0.0 0.0 210.0] 
+new linecode.powersystem_db_mv_NA2XS2Y_1x120_RM/25_6/10_kV nphases=3 
+~ rmatrix = [0.253 | 0.0 0.253 | 0.0 0.0 0.253] 
+~ xmatrix = [0.113 | 0.0 0.113 | 0.0 0.0 0.113] 
+~ cmatrix = [340.0 | 0.0 340.0 | 0.0 0.0 340.0] 
+new linecode.powersystem_db_mv_NA2XS2Y_1x185_RM/25_6/10_kV nphases=3 
+~ rmatrix = [0.161 | 0.0 0.161 | 0.0 0.0 0.161] 
+~ xmatrix = [0.11 | 0.0 0.11 | 0.0 0.0 0.11] 
+~ cmatrix = [406.0 | 0.0 406.0 | 0.0 0.0 406.0] 
+new linecode.powersystem_db_lv_NAYY_4x120_SE nphases=3 
+~ rmatrix = [0.225 | 0.0 0.225 | 0.0 0.0 0.225] 
+~ xmatrix = [0.08 | 0.0 0.08 | 0.0 0.0 0.08] 
+~ cmatrix = [264.0 | 0.0 264.0 | 0.0 0.0 264.0] 
+new linecode.powersystem_db_mv_NA2XS2Y_1x240_RM/25_6/10_kV nphases=3 
+~ rmatrix = [0.122 | 0.0 0.122 | 0.0 0.0 0.122] 
+~ xmatrix = [0.105 | 0.0 0.105 | 0.0 0.0 0.105] 
+~ cmatrix = [456.0 | 0.0 456.0 | 0.0 0.0 456.0] 
+new linecode.powersystem_db_lv_NAYY_4x150_SE nphases=3 
+~ rmatrix = [0.208 | 0.0 0.208 | 0.0 0.0 0.208] 
+~ xmatrix = [0.08 | 0.0 0.08 | 0.0 0.0 0.08] 
+~ cmatrix = [261.0 | 0.0 261.0 | 0.0 0.0 261.0] 
+new linecode.powersystem_db_mv_NA2XS2Y_1x95_RM/25_6/10_kV nphases=3 
+~ rmatrix = [0.313 | 0.0 0.313 | 0.0 0.0 0.313] 
+~ xmatrix = [0.123 | 0.0 0.123 | 0.0 0.0 0.123] 
+~ cmatrix = [315.0 | 0.0 315.0 | 0.0 0.0 315.0] 
+new linecode.powersystem_db_lv_NA2XY_4x240_SE nphases=3 
+~ rmatrix = [0.125 | 0.0 0.125 | 0.0 0.0 0.125] 
+~ xmatrix = [0.079 | 0.0 0.079 | 0.0 0.0 0.079] 
+~ cmatrix = [0.0 | 0.0 0.0 | 0.0 0.0 0.0] 
+new linecode.powersystem_db_mv_NA2XS2Y_1x70_RM/25_6/10_kV nphases=3 
+~ rmatrix = [0.443 | 0.0 0.443 | 0.0 0.0 0.443] 
+~ xmatrix = [0.123 | 0.0 0.123 | 0.0 0.0 0.123] 
+~ cmatrix = [280.0 | 0.0 280.0 | 0.0 0.0 280.0] 
+! Lines data 
+new line.2292 bus1=2398.1.2.3 bus2=848.1.2.3  phases=3 linecode=powersystem_db_lv_NA2XY_4x240_SE length = 0.013411445  
+new line.177 bus1=2555.1.2.3 bus2=419.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x50_SE length = 0.008760682  
+new line.1956 bus1=2193.1.2.3 bus2=1126.1.2.3  phases=3 linecode=powersystem_db_lv_NA2XY_4x240_SE length = 0.005388658  
+new line.627 bus1=13.1.2.3 bus2=851.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x50_SE length = 0.002699461  
+new line.450 bus1=2555.1.2.3 bus2=13.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x50_SE length = 0.048663731  
+new line.623 bus1=848.1.2.3 bus2=844.1.2.3  phases=3 linecode=powersystem_db_lv_NA2XY_4x240_SE length = 0.016419981  
+new line.2668 bus1=2555.1.2.3 bus2=140.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x50_SE length = 0.119640193  
+new line.529 bus1=2555.1.2.3 bus2=327.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x50_SE length = 0.238664125  
+new line.451 bus1=2555.1.2.3 bus2=140.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x50_SE length = 0.119640193  
+new line.2291 bus1=2555.1.2.3 bus2=2398.1.2.3  phases=3 linecode=powersystem_db_lv_NA2XY_4x240_SE length = 0.06141988  
+new line.628 bus1=851.1.2.3 bus2=809.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x50_SE length = 0.023044703  
+new line.772 bus1=1126.1.2.3 bus2=843.1.2.3  phases=3 linecode=powersystem_db_lv_NA2XY_4x240_SE length = 0.011395697  
+new line.1955 bus1=844.1.2.3 bus2=2193.1.2.3  phases=3 linecode=powersystem_db_lv_NA2XY_4x240_SE length = 0.00282745  
+new line.2212 bus1=843.1.2.3 bus2=2352.1.2.3  phases=3 linecode=powersystem_db_lv_NA2XY_4x240_SE length = 0.001400649  
+! Loads data 
+new load.772100000291768 bus1=1126.1.0 phases=1 kw=16.088 kvar=5.288 conn=wye kv=0.23 
+new load.1392 bus1=851.1.0 phases=1 kw=8.184 kvar=6.137 conn=wye kv=0.23 
+new load.897 bus1=844.1.0 phases=1 kw=3.066 kvar=2.3 conn=wye kv=0.23 
+new load.772100000292246 bus1=2398.1.0 phases=1 kw=14.681 kvar=4.825 conn=wye kv=0.23 
+new load.896 bus1=843.1.0 phases=1 kw=7.336 kvar=5.502 conn=wye kv=0.23 
+new load.772100000950281 bus1=2352.1.0 phases=1 kw=12.371 kvar=4.066 conn=wye kv=0.23 
+new load.772100000950117 bus1=2193.1.0 phases=1 kw=14.206 kvar=4.669 conn=wye kv=0.23 
+new load.772100000292360 bus1=809.1.0 phases=1 kw=11.945 kvar=3.926 conn=wye kv=0.23 
+new load.1226 bus1=848.1.0 phases=1 kw=5.761 kvar=4.321 conn=wye kv=0.23 
+solve
