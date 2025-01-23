@@ -1,6 +1,6 @@
 # The Spanish representative feeders from the Spanish data set 
 
-These representative feeders are selected from the Spanish data set. The original Spanish dataset is part of the Spanish [dataset](https://data.mendeley.com/datasets/685vgp64sm/1)
+These representative feeders are selected from the Spanish [dataset](https://data.mendeley.com/datasets/685vgp64sm/1)
 
 |                                                   | **RF1** | **RF2** | **RF3** | **RF4** | **RF5** | **RF6** |
 |---------------------------------------------------|---------|---------|---------|---------|---------|---------|
