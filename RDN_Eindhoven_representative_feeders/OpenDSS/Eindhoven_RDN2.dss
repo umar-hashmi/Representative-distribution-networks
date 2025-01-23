@@ -1,0 +1,446 @@
+clear
+New Circuit.RDN2 basekv=10 pu=1.0
+edit Vsource.Source bus1=source basekv=10 pu=1.0001 phases=3 ISC3=9000  ISC1=5000
+! Transformer data 
+new transformer.47 buses = [Source.1.2.3.0 2577.1.2.3.0] phases=3 windings=2 XHL = 4.0 %LoadLoss=1.325 Conns=[WYE WYE] kVs=[10.0 0.4] kVAs=[630000.0 630000.0] 
+new transformer.27 buses = [Source.1.2.3.0 2577.1.2.3.0] phases=3 windings=2 XHL = 4.0 %LoadLoss=1.325 Conns=[WYE WYE] kVs=[10.0 0.4] kVAs=[630000.0 630000.0] 
+! Linecodes data 
+! Linecodes data 
+new linecode.powersystem_db_lv_NAYY_4x50_SE nphases=3 
+~ rmatrix = [0.642 | 0.0 0.642 | 0.0 0.0 0.642] 
+~ xmatrix = [0.083 | 0.0 0.083 | 0.0 0.0 0.083] 
+~ cmatrix = [210.0 | 0.0 210.0 | 0.0 0.0 210.0] 
+new linecode.powersystem_db_mv_NA2XS2Y_1x120_RM/25_6/10_kV nphases=3 
+~ rmatrix = [0.253 | 0.0 0.253 | 0.0 0.0 0.253] 
+~ xmatrix = [0.113 | 0.0 0.113 | 0.0 0.0 0.113] 
+~ cmatrix = [340.0 | 0.0 340.0 | 0.0 0.0 340.0] 
+new linecode.powersystem_db_mv_NA2XS2Y_1x185_RM/25_6/10_kV nphases=3 
+~ rmatrix = [0.161 | 0.0 0.161 | 0.0 0.0 0.161] 
+~ xmatrix = [0.11 | 0.0 0.11 | 0.0 0.0 0.11] 
+~ cmatrix = [406.0 | 0.0 406.0 | 0.0 0.0 406.0] 
+new linecode.powersystem_db_lv_NAYY_4x120_SE nphases=3 
+~ rmatrix = [0.225 | 0.0 0.225 | 0.0 0.0 0.225] 
+~ xmatrix = [0.08 | 0.0 0.08 | 0.0 0.0 0.08] 
+~ cmatrix = [264.0 | 0.0 264.0 | 0.0 0.0 264.0] 
+new linecode.powersystem_db_mv_NA2XS2Y_1x240_RM/25_6/10_kV nphases=3 
+~ rmatrix = [0.122 | 0.0 0.122 | 0.0 0.0 0.122] 
+~ xmatrix = [0.105 | 0.0 0.105 | 0.0 0.0 0.105] 
+~ cmatrix = [456.0 | 0.0 456.0 | 0.0 0.0 456.0] 
+new linecode.powersystem_db_lv_NAYY_4x150_SE nphases=3 
+~ rmatrix = [0.208 | 0.0 0.208 | 0.0 0.0 0.208] 
+~ xmatrix = [0.08 | 0.0 0.08 | 0.0 0.0 0.08] 
+~ cmatrix = [261.0 | 0.0 261.0 | 0.0 0.0 261.0] 
+new linecode.powersystem_db_mv_NA2XS2Y_1x95_RM/25_6/10_kV nphases=3 
+~ rmatrix = [0.313 | 0.0 0.313 | 0.0 0.0 0.313] 
+~ xmatrix = [0.123 | 0.0 0.123 | 0.0 0.0 0.123] 
+~ cmatrix = [315.0 | 0.0 315.0 | 0.0 0.0 315.0] 
+new linecode.powersystem_db_lv_NA2XY_4x240_SE nphases=3 
+~ rmatrix = [0.125 | 0.0 0.125 | 0.0 0.0 0.125] 
+~ xmatrix = [0.079 | 0.0 0.079 | 0.0 0.0 0.079] 
+~ cmatrix = [0.0 | 0.0 0.0 | 0.0 0.0 0.0] 
+new linecode.powersystem_db_mv_NA2XS2Y_1x70_RM/25_6/10_kV nphases=3 
+~ rmatrix = [0.443 | 0.0 0.443 | 0.0 0.0 0.443] 
+~ xmatrix = [0.123 | 0.0 0.123 | 0.0 0.0 0.123] 
+~ cmatrix = [280.0 | 0.0 280.0 | 0.0 0.0 280.0] 
+! Lines data 
+new line.2093 bus1=519.1.2.3 bus2=2279.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x150_SE length = 0.019337884  
+new line.1813 bus1=1850.1.2.3 bus2=2099.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x50_SE length = 0.007386766  
+new line.2096 bus1=2577.1.2.3 bus2=2280.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x120_SE length = 0.096699647  
+new line.2438 bus1=2478.1.2.3 bus2=1590.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x120_SE length = 0.008953814  
+new line.673 bus1=466.1.2.3 bus2=955.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x50_SE length = 0.025475786  
+new line.2876 bus1=338.1.2.3 bus2=155.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x50_SE length = 0.00590386  
+new line.1503 bus1=291.1.2.3 bus2=1875.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x120_SE length = 0.024745889  
+new line.348 bus1=338.1.2.3 bus2=155.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x50_SE length = 0.00590386  
+new line.1457 bus1=324.1.2.3 bus2=1838.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x120_SE length = 0.015492595  
+new line.2271 bus1=2385.1.2.3 bus2=1762.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x50_SE length = 0.011756433  
+new line.1942 bus1=1879.1.2.3 bus2=2185.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x50_SE length = 0.015520903  
+new line.2123 bus1=1699.1.2.3 bus2=2299.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x50_SE length = 0.013799518  
+new line.1692 bus1=1025.1.2.3 bus2=2015.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x50_SE length = 0.001938932  
+new line.2174 bus1=2328.1.2.3 bus2=1581.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x50_SE length = 0.006885905  
+new line.2482 bus1=2492.1.2.3 bus2=2504.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x50_SE length = 0.029854812  
+new line.2462 bus1=522.1.2.3 bus2=2492.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x50_SE length = 0.000814311  
+new line.2398 bus1=2169.1.2.3 bus2=2456.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x150_SE length = 0.012443081  
+new line.479 bus1=137.1.2.3 bus2=288.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x50_SE length = 0.091522623  
+new line.1193 bus1=958.1.2.3 bus2=1626.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x50_SE length = 0.02026394  
+new line.3048 bus1=811.1.2.3 bus2=519.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x150_SE length = 0.010052609  
+new line.2356 bus1=2432.1.2.3 bus2=1870.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x150_SE length = 0.010038614  
+new line.2249 bus1=2373.1.2.3 bus2=1897.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x120_SE length = 0.007947615  
+new line.2973 bus1=1179.1.2.3 bus2=2001.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x50_SE length = 0.058395149  
+new line.23 bus1=174.1.2.3 bus2=466.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x50_SE length = 0.002107779  
+new line.1434 bus1=1040.1.2.3 bus2=1823.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x50_SE length = 0.014687151  
+new line.2250 bus1=128.1.2.3 bus2=2373.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x120_SE length = 0.07971681  
+new line.945 bus1=1046.1.2.3 bus2=1357.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x50_SE length = 0.017681973  
+new line.845 bus1=1237.1.2.3 bus2=1151.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x50_SE length = 0.056812745  
+new line.802 bus1=487.1.2.3 bus2=1173.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x50_SE length = 0.002214109  
+new line.2455 bus1=460.1.2.3 bus2=2487.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x50_SE length = 0.02720908  
+new line.671 bus1=743.1.2.3 bus2=947.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x50_SE length = 0.014150188  
+new line.801 bus1=1172.1.2.3 bus2=291.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x150_SE length = 0.025599864  
+new line.935 bus1=155.1.2.3 bus2=1347.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x50_SE length = 0.02875527  
+new line.1391 bus1=1786.1.2.3 bus2=460.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x50_SE length = 0.003185012  
+new line.1739 bus1=1385.1.2.3 bus2=2047.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x50_SE length = 0.014410966  
+new line.26 bus1=466.1.2.3 bus2=677.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x50_SE length = 0.026461491  
+new line.1814 bus1=2099.1.2.3 bus2=1553.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x50_SE length = 0.026585573  
+new line.2483 bus1=2504.1.2.3 bus2=371.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x50_SE length = 0.01725435  
+new line.962 bus1=1173.1.2.3 bus2=1385.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x50_SE length = 0.064614116  
+new line.656 bus1=394.1.2.3 bus2=903.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x50_SE length = 0.019925032  
+new line.1938 bus1=2047.1.2.3 bus2=2181.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x50_SE length = 0.017942617  
+new line.659 bus1=905.1.2.3 bus2=754.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x50_SE length = 0.022869678  
+new line.1831 bus1=754.1.2.3 bus2=2110.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x50_SE length = 0.023883466  
+new line.2336 bus1=1803.1.2.3 bus2=2422.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x120_SE length = 0.006985857  
+new line.2855 bus1=2423.1.2.3 bus2=1099.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x50_SE length = 0.000291428  
+new line.1752 bus1=2056.1.2.3 bus2=1614.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x120_SE length = 0.005384863  
+new line.3013 bus1=1162.1.2.3 bus2=552.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x50_SE length = 0.029951403  
+new line.1140 bus1=1578.1.2.3 bus2=1040.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x50_SE length = 0.01210976  
+new line.805 bus1=580.1.2.3 bus2=1178.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x120_SE length = 0.009158085  
+new line.1690 bus1=2013.1.2.3 bus2=1438.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x120_SE length = 0.003920735  
+new line.1154 bus1=1590.1.2.3 bus2=324.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x120_SE length = 0.021660456  
+new line.2425 bus1=2470.1.2.3 bus2=2418.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x150_SE length = 0.018112226  
+new line.806 bus1=1178.1.2.3 bus2=653.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x120_SE length = 0.068198879  
+new line.2906 bus1=2504.1.2.3 bus2=371.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x50_SE length = 0.01725435  
+new line.1870 bus1=1724.1.2.3 bus2=2136.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x50_SE length = 0.001532574  
+new line.2943 bus1=338.1.2.3 bus2=155.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x50_SE length = 0.00590386  
+new line.313 bus1=458.1.2.3 bus2=457.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x150_SE length = 0.018537983  
+new line.1807 bus1=552.1.2.3 bus2=2094.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x50_SE length = 0.022630763  
+new line.686 bus1=2577.1.2.3 bus2=976.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x150_SE length = 0.148516314  
+new line.2363 bus1=219.1.2.3 bus2=2436.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x50_SE length = 0.028707263  
+new line.2255 bus1=2229.1.2.3 bus2=2376.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x120_SE length = 0.010374386  
+new line.1800 bus1=2088.1.2.3 bus2=338.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x150_SE length = 0.038055296  
+new line.1308 bus1=1341.1.2.3 bus2=1724.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x50_SE length = 0.00924252  
+new line.1029 bus1=1462.1.2.3 bus2=1341.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x50_SE length = 0.004620631  
+new line.2433 bus1=1332.1.2.3 bus2=2475.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x50_SE length = 0.009333413  
+new line.1848 bus1=2121.1.2.3 bus2=743.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x50_SE length = 0.012386313  
+new line.309 bus1=393.1.2.3 bus2=78.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x50_SE length = 0.038478626  
+new line.2825 bus1=2385.1.2.3 bus2=1762.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x50_SE length = 0.011756433  
+new line.1691 bus1=2014.1.2.3 bus2=1852.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x50_SE length = 0.002166601  
+new line.2616 bus1=533.1.2.3 bus2=580.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x150_SE length = 0.000920527  
+new line.1753 bus1=1150.1.2.3 bus2=2056.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x120_SE length = 0.007404528  
+new line.1278 bus1=786.1.2.3 bus2=1699.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x50_SE length = 0.033854108  
+new line.1943 bus1=2185.1.2.3 bus2=150.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x50_SE length = 0.015552009  
+new line.2316 bus1=2353.1.2.3 bus2=2412.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x50_SE length = 0.009983088  
+new line.2256 bus1=2376.1.2.3 bus2=290.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x120_SE length = 0.020300893  
+new line.898 bus1=903.1.2.3 bus2=1293.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x50_SE length = 0.006601846  
+new line.2824 bus1=1099.1.2.3 bus2=2385.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x50_SE length = 0.016659423  
+new line.2079 bus1=128.1.2.3 bus2=2270.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x150_SE length = 0.043128358  
+new line.2206 bus1=518.1.2.3 bus2=2348.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x50_SE length = 0.016520468  
+new line.590 bus1=811.1.2.3 bus2=519.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x150_SE length = 0.010052609  
+new line.2394 bus1=2454.1.2.3 bus2=1533.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x50_SE length = 0.003774354  
+new line.2105 bus1=290.1.2.3 bus2=2287.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x150_SE length = 0.021969228  
+new line.791 bus1=1158.1.2.3 bus2=1065.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x50_SE length = 0.003447773  
+new line.2904 bus1=324.1.2.3 bus2=1838.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x120_SE length = 0.015492595  
+new line.2303 bus1=1659.1.2.3 bus2=2405.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x120_SE length = 0.015695806  
+new line.890 bus1=947.1.2.3 bus2=1285.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x50_SE length = 0.033919576  
+new line.776 bus1=1130.1.2.3 bus2=395.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x50_SE length = 0.045921652  
+new line.25 bus1=677.1.2.3 bus2=219.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x50_SE length = 0.001530056  
+new line.3047 bus1=2577.1.2.3 bus2=811.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x150_SE length = 0.090132001  
+new line.2335 bus1=2422.1.2.3 bus2=2013.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x120_SE length = 0.009486075  
+new line.3064 bus1=2577.1.2.3 bus2=811.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x150_SE length = 0.090132001  
+new line.2885 bus1=519.1.2.3 bus2=128.1.2.3  phases=3 linecode=powersystem_db_lv_NA2XY_4x240_SE length = 0.012902877  
+new line.2140 bus1=1909.1.2.3 bus2=2308.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x150_SE length = 0.001450141  
+new line.973 bus1=467.1.2.3 bus2=1401.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x50_SE length = 0.008188577  
+new line.3014 bus1=371.1.2.3 bus2=1179.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x50_SE length = 0.027059782  
+new line.304 bus1=458.1.2.3 bus2=703.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x50_SE length = 0.16031395  
+new line.2282 bus1=2392.1.2.3 bus2=2268.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x50_SE length = 0.008582384  
+new line.2439 bus1=291.1.2.3 bus2=2478.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x120_SE length = 0.052750857  
+new line.807 bus1=371.1.2.3 bus2=1179.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x50_SE length = 0.027059782  
+new line.2947 bus1=811.1.2.3 bus2=519.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x150_SE length = 0.010052609  
+new line.2175 bus1=2015.1.2.3 bus2=2328.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x50_SE length = 0.002361547  
+new line.303 bus1=155.1.2.3 bus2=266.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x50_SE length = 0.001146922  
+new line.1783 bus1=2075.1.2.3 bus2=1105.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x50_SE length = 0.011142596  
+new line.1989 bus1=2212.1.2.3 bus2=1455.1.2.3  phases=3 linecode=powersystem_db_lv_NA2XY_4x240_SE length = 0.016369479  
+new line.2905 bus1=1838.1.2.3 bus2=73.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x120_SE length = 0.037541669  
+new line.1990 bus1=460.1.2.3 bus2=2212.1.2.3  phases=3 linecode=powersystem_db_lv_NA2XY_4x240_SE length = 0.012114985  
+new line.2337 bus1=338.1.2.3 bus2=2423.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x50_SE length = 0.017081198  
+new line.1023 bus1=1455.1.2.3 bus2=206.1.2.3  phases=3 linecode=powersystem_db_lv_NA2XY_4x240_SE length = 0.02183878  
+new line.922 bus1=174.1.2.3 bus2=1332.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x50_SE length = 0.030385194  
+new line.2122 bus1=2299.1.2.3 bus2=2227.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x50_SE length = 0.011696178  
+new line.2484 bus1=911.1.2.3 bus2=2505.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x50_SE length = 0.018930557  
+new line.2020 bus1=2230.1.2.3 bus2=562.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x120_SE length = 0.011815029  
+new line.1822 bus1=942.1.2.3 bus2=2103.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x150_SE length = 0.008368297  
+new line.426 bus1=312.1.2.3 bus2=276.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x150_SE length = 0.028569119  
+new line.2431 bus1=743.1.2.3 bus2=2474.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x50_SE length = 0.013584424  
+new line.3033 bus1=155.1.2.3 bus2=1347.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x50_SE length = 0.02875527  
+new line.795 bus1=1162.1.2.3 bus2=552.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x50_SE length = 0.029951403  
+new line.3018 bus1=1246.1.2.3 bus2=1162.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x50_SE length = 0.043898482  
+new line.618 bus1=2577.1.2.3 bus2=841.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x120_SE length = 0.070941111  
+new line.1418 bus1=562.1.2.3 bus2=1807.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x120_SE length = 0.010902264  
+new line.2675 bus1=128.1.2.3 bus2=533.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x150_SE length = 0.04156262  
+new line.1120 bus1=1553.1.2.3 bus2=1328.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x50_SE length = 0.001887054  
+new line.1908 bus1=1070.1.2.3 bus2=2160.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x150_SE length = 0.006761493  
+new line.1677 bus1=1179.1.2.3 bus2=2001.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x50_SE length = 0.058395149  
+new line.1977 bus1=1438.1.2.3 bus2=2205.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x120_SE length = 0.003554177  
+new line.2475 bus1=1169.1.2.3 bus2=2500.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x150_SE length = 0.017288824  
+new line.2281 bus1=1814.1.2.3 bus2=2392.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x50_SE length = 0.00296684  
+new line.1693 bus1=2016.1.2.3 bus2=610.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x50_SE length = 0.024318969  
+new line.1390 bus1=1347.1.2.3 bus2=1786.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x50_SE length = 0.019451018  
+new line.1514 bus1=457.1.2.3 bus2=1883.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x50_SE length = 0.019464132  
+new line.2883 bus1=1786.1.2.3 bus2=460.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x50_SE length = 0.003185012  
+new line.2207 bus1=2348.1.2.3 bus2=699.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x50_SE length = 0.006978437  
+new line.1231 bus1=290.1.2.3 bus2=1659.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x120_SE length = 0.017305232  
+new line.2104 bus1=2287.1.2.3 bus2=2169.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x150_SE length = 0.021391214  
+new line.1638 bus1=1977.1.2.3 bus2=187.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x50_SE length = 0.006200928  
+new line.2317 bus1=2412.1.2.3 bus2=1237.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x50_SE length = 0.005769615  
+new line.1976 bus1=2205.1.2.3 bus2=857.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x120_SE length = 0.007164953  
+new line.2238 bus1=2366.1.2.3 bus2=2353.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x50_SE length = 0.00137671  
+new line.2489 bus1=737.1.2.3 bus2=2508.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x50_SE length = 0.012928797  
+new line.3036 bus1=2212.1.2.3 bus2=1455.1.2.3  phases=3 linecode=powersystem_db_lv_NA2XY_4x240_SE length = 0.016369479  
+new line.2424 bus1=2077.1.2.3 bus2=2470.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x150_SE length = 0.024385418  
+new line.1458 bus1=1838.1.2.3 bus2=73.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x120_SE length = 0.037541669  
+new line.658 bus1=522.1.2.3 bus2=905.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x50_SE length = 0.004966544  
+new line.853 bus1=371.1.2.3 bus2=1246.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x50_SE length = 0.010213645  
+new line.1229 bus1=1658.1.2.3 bus2=942.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x150_SE length = 0.006800747  
+new line.3017 bus1=371.1.2.3 bus2=1246.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x50_SE length = 0.010213645  
+new line.369 bus1=519.1.2.3 bus2=128.1.2.3  phases=3 linecode=powersystem_db_lv_NA2XY_4x240_SE length = 0.012902877  
+new line.2385 bus1=2449.1.2.3 bus2=522.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x50_SE length = 0.042872181  
+new line.1472 bus1=395.1.2.3 bus2=1850.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x50_SE length = 0.015768986  
+new line.1432 bus1=1820.1.2.3 bus2=1241.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x120_SE length = 0.005152557  
+new line.2018 bus1=580.1.2.3 bus2=2229.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x120_SE length = 0.07268606  
+new line.2384 bus1=487.1.2.3 bus2=2449.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x50_SE length = 0.010480568  
+new line.478 bus1=2577.1.2.3 bus2=137.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x120_SE length = 0.170079197  
+new line.1494 bus1=1870.1.2.3 bus2=394.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x150_SE length = 0.007337459  
+new line.2364 bus1=2436.1.2.3 bus2=2400.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x50_SE length = 0.006141395  
+new line.852 bus1=1245.1.2.3 bus2=467.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x50_SE length = 0.002979368  
+new line.2422 bus1=653.1.2.3 bus2=2469.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x50_SE length = 0.01349033  
+new line.2503 bus1=2517.1.2.3 bus2=1879.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x50_SE length = 0.012642914  
+new line.2019 bus1=2577.1.2.3 bus2=2230.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x120_SE length = 0.095586705  
+new line.1847 bus1=346.1.2.3 bus2=2121.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x50_SE length = 0.037698864  
+new line.3003 bus1=2088.1.2.3 bus2=338.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x150_SE length = 0.038055296  
+new line.352 bus1=189.1.2.3 bus2=341.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x50_SE length = 0.024175692  
+new line.312 bus1=128.1.2.3 bus2=385.1.2.3  phases=3 linecode=powersystem_db_lv_NA2XY_4x240_SE length = 0.004488655  
+new line.2397 bus1=2456.1.2.3 bus2=1172.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x150_SE length = 0.001826829  
+new line.1697 bus1=2019.1.2.3 bus2=1169.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x150_SE length = 0.005880188  
+new line.1230 bus1=976.1.2.3 bus2=1658.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x150_SE length = 0.000780947  
+new line.891 bus1=1285.1.2.3 bus2=1196.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x50_SE length = 0.006485757  
+new line.453 bus1=525.1.2.3 bus2=312.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x150_SE length = 0.00301666  
+new line.1791 bus1=1196.1.2.3 bus2=2083.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x50_SE length = 0.032680034  
+new line.1792 bus1=2083.1.2.3 bus2=199.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x50_SE length = 0.00759317  
+new line.775 bus1=394.1.2.3 bus2=1130.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x50_SE length = 0.002253391  
+new line.1517 bus1=1887.1.2.3 bus2=911.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x50_SE length = 0.021427022  
+new line.24 bus1=276.1.2.3 bus2=174.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x150_SE length = 0.008288892  
+new line.601 bus1=2577.1.2.3 bus2=824.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x120_SE length = 0.062106701  
+new line.311 bus1=385.1.2.3 bus2=548.1.2.3  phases=3 linecode=powersystem_db_lv_NA2XY_4x240_SE length = 0.014136029  
+new line.688 bus1=979.1.2.3 bus2=958.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x50_SE length = 0.00517339  
+new line.2621 bus1=338.1.2.3 bus2=155.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x50_SE length = 0.00590386  
+new line.2094 bus1=2279.1.2.3 bus2=1909.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x150_SE length = 0.005714624  
+new line.314 bus1=457.1.2.3 bus2=487.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x120_SE length = 0.004878276  
+new line.480 bus1=128.1.2.3 bus2=533.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x150_SE length = 0.04156262  
+new line.2100 bus1=699.1.2.3 bus2=2284.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x50_SE length = 0.029918774  
+new line.1030 bus1=466.1.2.3 bus2=1462.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x50_SE length = 0.006568309  
+new line.1179 bus1=1614.1.2.3 bus2=189.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x120_SE length = 0.02127039  
+new line.566 bus1=341.1.2.3 bus2=786.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x50_SE length = 0.010889784  
+new line.315 bus1=533.1.2.3 bus2=580.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x150_SE length = 0.000920527  
+new line.305 bus1=393.1.2.3 bus2=158.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x50_SE length = 0.136655943  
+new line.879 bus1=1151.1.2.3 bus2=1273.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x50_SE length = 0.010268197  
+new line.792 bus1=677.1.2.3 bus2=1158.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x50_SE length = 0.015564127  
+new line.2237 bus1=189.1.2.3 bus2=2366.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x50_SE length = 0.025309391  
+new line.2860 bus1=155.1.2.3 bus2=266.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x50_SE length = 0.001146922  
+new line.2080 bus1=2270.1.2.3 bus2=1070.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x150_SE length = 0.014236772  
+new line.3046 bus1=1455.1.2.3 bus2=206.1.2.3  phases=3 linecode=powersystem_db_lv_NA2XY_4x240_SE length = 0.02183878  
+new line.2423 bus1=2469.1.2.3 bus2=1887.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x50_SE length = 0.012645136  
+new line.1426 bus1=219.1.2.3 bus2=1814.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x50_SE length = 0.010906309  
+new line.2900 bus1=460.1.2.3 bus2=2487.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x50_SE length = 0.02720908  
+new line.3065 bus1=811.1.2.3 bus2=519.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x150_SE length = 0.010052609  
+new line.1782 bus1=346.1.2.3 bus2=2075.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x50_SE length = 0.020114768  
+new line.2889 bus1=2470.1.2.3 bus2=2418.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x150_SE length = 0.018112226  
+new line.1410 bus1=2577.1.2.3 bus2=1803.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x120_SE length = 0.102395189  
+new line.1513 bus1=1883.1.2.3 bus2=1578.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x50_SE length = 0.025079886  
+new line.2806 bus1=1590.1.2.3 bus2=324.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x120_SE length = 0.021660456  
+new line.952 bus1=754.1.2.3 bus2=1369.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x50_SE length = 0.025014517  
+new line.851 bus1=466.1.2.3 bus2=1245.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x50_SE length = 0.018991856  
+new line.854 bus1=1246.1.2.3 bus2=1162.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x50_SE length = 0.043898482  
+new line.848 bus1=1241.1.2.3 bus2=1150.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x120_SE length = 0.01049486  
+new line.880 bus1=1273.1.2.3 bus2=912.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x50_SE length = 0.004999614  
+new line.1821 bus1=2103.1.2.3 bus2=525.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x150_SE length = 0.021938283  
+new line.310 bus1=548.1.2.3 bus2=458.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x150_SE length = 0.002741288  
+new line.2852 bus1=2418.1.2.3 bus2=2088.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x150_SE length = 0.008408663  
+new line.2295 bus1=2400.1.2.3 bus2=2014.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x50_SE length = 0.004226101  
+new line.318 bus1=345.1.2.3 bus2=346.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x50_SE length = 0.009512981  
+new line.317 bus1=737.1.2.3 bus2=345.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x50_SE length = 0.018534611  
+new line.589 bus1=2577.1.2.3 bus2=811.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x150_SE length = 0.090132001  
+new line.2338 bus1=2423.1.2.3 bus2=1099.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x50_SE length = 0.000291428  
+new line.1832 bus1=2110.1.2.3 bus2=1666.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x50_SE length = 0.035478278  
+new line.1909 bus1=2160.1.2.3 bus2=2019.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x150_SE length = 0.013886897  
+new line.2854 bus1=338.1.2.3 bus2=2423.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x50_SE length = 0.017081198  
+new line.2476 bus1=2500.1.2.3 bus2=2077.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x150_SE length = 0.006763404  
+new line.2328 bus1=2418.1.2.3 bus2=2088.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x150_SE length = 0.008408663  
+new line.3037 bus1=460.1.2.3 bus2=2212.1.2.3  phases=3 linecode=powersystem_db_lv_NA2XY_4x240_SE length = 0.012114985  
+new line.1417 bus1=1807.1.2.3 bus2=393.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x120_SE length = 0.036451604  
+new line.1869 bus1=2136.1.2.3 bus2=518.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x50_SE length = 0.021011581  
+new line.2270 bus1=1099.1.2.3 bus2=2385.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x50_SE length = 0.016659423  
+new line.2393 bus1=699.1.2.3 bus2=2454.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x50_SE length = 0.023709863  
+new line.2502 bus1=653.1.2.3 bus2=2517.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x50_SE length = 0.02324649  
+new line.2882 bus1=1347.1.2.3 bus2=1786.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x50_SE length = 0.019451018  
+new line.2016 bus1=2227.1.2.3 bus2=1977.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x50_SE length = 0.012068623  
+new line.3007 bus1=552.1.2.3 bus2=2094.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x50_SE length = 0.022630763  
+new line.2355 bus1=2308.1.2.3 bus2=2432.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x150_SE length = 0.005450895  
+new line.944 bus1=1357.1.2.3 bus2=737.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x50_SE length = 0.035017894  
+new line.1618 bus1=467.1.2.3 bus2=1964.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x50_SE length = 0.021850547  
+new line.617 bus1=841.1.2.3 bus2=822.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x120_SE length = 0.016909239  
+new line.713 bus1=955.1.2.3 bus2=1025.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x50_SE length = 0.014226557  
+new line.2946 bus1=2577.1.2.3 bus2=811.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x150_SE length = 0.090132001  
+new line.2095 bus1=2280.1.2.3 bus2=1820.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x120_SE length = 0.009982073  
+new line.725 bus1=548.1.2.3 bus2=1046.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x50_SE length = 0.022899764  
+new line.919 bus1=1328.1.2.3 bus2=979.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x50_SE length = 0.036340618  
+new line.2432 bus1=2475.1.2.3 bus2=2016.1.2.3  phases=3 linecode=powersystem_db_lv_NAYY_4x50_SE length = 0.02166021  
+! Loads data 
+new load.772100000284530 bus1=2422.1.0 phases=1 kw=2.925 kvar=0.961 conn=wye kv=0.23 
+new load.2673 bus1=786.1.0 phases=1 kw=2.125 kvar=1.595 conn=wye kv=0.23 
+new load.772100000281368 bus1=1879.1.0 phases=1 kw=3.764 kvar=1.237 conn=wye kv=0.23 
+new load.772100000283012 bus1=976.1.0 phases=1 kw=1.797 kvar=0.591 conn=wye kv=0.23 
+new load.772100000283915 bus1=137.1.0 phases=1 kw=2.683 kvar=0.882 conn=wye kv=0.23 
+new load.772100000281978 bus1=2456.1.0 phases=1 kw=4.11 kvar=1.351 conn=wye kv=0.23 
+new load.772100000286154 bus1=1977.1.0 phases=1 kw=3.074 kvar=1.01 conn=wye kv=0.23 
+new load.2419 bus1=857.1.0 phases=1 kw=2.774 kvar=2.081 conn=wye kv=0.23 
+new load.772100000281729 bus1=1105.1.0 phases=1 kw=4.894 kvar=1.609 conn=wye kv=0.23 
+new load.772100000284852 bus1=2308.1.0 phases=1 kw=2.255 kvar=0.741 conn=wye kv=0.23 
+new load.772100000281247 bus1=206.1.0 phases=1 kw=4.622 kvar=1.519 conn=wye kv=0.23 
+new load.772100000283707 bus1=1070.1.0 phases=1 kw=7.03 kvar=2.311 conn=wye kv=0.23 
+new load.772100000283851 bus1=2047.1.0 phases=1 kw=5.699 kvar=1.873 conn=wye kv=0.23 
+new load.772100001000617 bus1=2077.1.0 phases=1 kw=4.991 kvar=1.64 conn=wye kv=0.23 
+new load.772100001000621 bus1=1823.1.0 phases=1 kw=4.934 kvar=1.622 conn=wye kv=0.23 
+new load.772100000281845 bus1=1875.1.0 phases=1 kw=4.058 kvar=1.334 conn=wye kv=0.23 
+new load.772100000950104 bus1=2227.1.0 phases=1 kw=7.55 kvar=2.482 conn=wye kv=0.23 
+new load.772100000284853 bus1=1293.1.0 phases=1 kw=2.262 kvar=0.744 conn=wye kv=0.23 
+new load.772100000285809 bus1=1273.1.0 phases=1 kw=1.78 kvar=0.585 conn=wye kv=0.23 
+new load.772100000283606 bus1=2432.1.0 phases=1 kw=2.573 kvar=0.846 conn=wye kv=0.23 
+new load.772100000281982 bus1=2505.1.0 phases=1 kw=4.118 kvar=1.353 conn=wye kv=0.23 
+new load.772100000282964 bus1=1850.1.0 phases=1 kw=4.482 kvar=1.473 conn=wye kv=0.23 
+new load.772100000280705 bus1=199.1.0 phases=1 kw=4.582 kvar=1.506 conn=wye kv=0.23 
+new load.772100001000613 bus1=1178.1.0 phases=1 kw=6.226 kvar=2.046 conn=wye kv=0.23 
+new load.772100000283015 bus1=2103.1.0 phases=1 kw=1.834 kvar=0.603 conn=wye kv=0.23 
+new load.772100000284668 bus1=1099.1.0 phases=1 kw=2.869 kvar=0.943 conn=wye kv=0.23 
+new load.772100001000616 bus1=73.1.0 phases=1 kw=4.13 kvar=1.358 conn=wye kv=0.23 
+new load.772100000286626 bus1=2016.1.0 phases=1 kw=1.832 kvar=0.602 conn=wye kv=0.23 
+new load.772100000284215 bus1=1328.1.0 phases=1 kw=5.842 kvar=1.92 conn=wye kv=0.23 
+new load.772100000283103 bus1=2412.1.0 phases=1 kw=1.776 kvar=0.584 conn=wye kv=0.23 
+new load.772100000283625 bus1=1438.1.0 phases=1 kw=3.913 kvar=1.286 conn=wye kv=0.23 
+new load.772100000282884 bus1=2376.1.0 phases=1 kw=4.419 kvar=1.453 conn=wye kv=0.23 
+new load.772100000281378 bus1=1369.1.0 phases=1 kw=3.061 kvar=1.006 conn=wye kv=0.23 
+new load.772100000281440 bus1=1179.1.0 phases=1 kw=4.937 kvar=1.623 conn=wye kv=0.23 
+new load.772100000282601 bus1=1897.1.0 phases=1 kw=2.943 kvar=0.967 conn=wye kv=0.23 
+new load.772100000285273 bus1=1964.1.0 phases=1 kw=1.791 kvar=0.589 conn=wye kv=0.23 
+new load.772100000283751 bus1=1347.1.0 phases=1 kw=3.324 kvar=1.092 conn=wye kv=0.23 
+new load.772100000283511 bus1=1241.1.0 phases=1 kw=2.524 kvar=0.83 conn=wye kv=0.23 
+new load.772100000284667 bus1=2423.1.0 phases=1 kw=3.767 kvar=1.238 conn=wye kv=0.23 
+new load.772100000281371 bus1=2121.1.0 phases=1 kw=3.237 kvar=1.064 conn=wye kv=0.23 
+new load.772100000285274 bus1=1065.1.0 phases=1 kw=1.743 kvar=0.573 conn=wye kv=0.23 
+new load.772100000282885 bus1=2287.1.0 phases=1 kw=3.014 kvar=0.991 conn=wye kv=0.23 
+new load.772100000282968 bus1=2280.1.0 phases=1 kw=2.577 kvar=0.847 conn=wye kv=0.23 
+new load.772100000282924 bus1=290.1.0 phases=1 kw=5.888 kvar=1.935 conn=wye kv=0.23 
+new load.772100000282303 bus1=2169.1.0 phases=1 kw=3.251 kvar=1.068 conn=wye kv=0.23 
+new load.772100000286326 bus1=958.1.0 phases=1 kw=2.953 kvar=0.971 conn=wye kv=0.23 
+new load.772100000286138 bus1=2392.1.0 phases=1 kw=1.75 kvar=0.575 conn=wye kv=0.23 
+new load.772100000282268 bus1=2405.1.0 phases=1 kw=6.282 kvar=2.065 conn=wye kv=0.23 
+new load.772100000283039 bus1=2181.1.0 phases=1 kw=5.69 kvar=1.87 conn=wye kv=0.23 
+new load.772100000285275 bus1=1158.1.0 phases=1 kw=1.823 kvar=0.599 conn=wye kv=0.23 
+new load.772100000283105 bus1=1533.1.0 phases=1 kw=1.779 kvar=0.585 conn=wye kv=0.23 
+new load.772100000283379 bus1=1169.1.0 phases=1 kw=3.621 kvar=1.19 conn=wye kv=0.23 
+new load.772100000284877 bus1=155.1.0 phases=1 kw=2.408 kvar=0.792 conn=wye kv=0.23 
+new load.772100000282267 bus1=2001.1.0 phases=1 kw=4.463 kvar=1.467 conn=wye kv=0.23 
+new load.772100000286469 bus1=1245.1.0 phases=1 kw=1.823 kvar=0.599 conn=wye kv=0.23 
+new load.772100000283107 bus1=2454.1.0 phases=1 kw=3.042 kvar=1.0 conn=wye kv=0.23 
+new load.772100001000651 bus1=2299.1.0 phases=1 kw=4.637 kvar=1.524 conn=wye kv=0.23 
+new load.772100000282499 bus1=1385.1.0 phases=1 kw=5.993 kvar=1.97 conn=wye kv=0.23 
+new load.772100000281449 bus1=2478.1.0 phases=1 kw=5.448 kvar=1.791 conn=wye kv=0.23 
+new load.772100000286467 bus1=467.1.0 phases=1 kw=1.756 kvar=0.577 conn=wye kv=0.23 
+new load.772100000284872 bus1=2470.1.0 phases=1 kw=6.471 kvar=2.127 conn=wye kv=0.23 
+new load.772100000285213 bus1=1332.1.0 phases=1 kw=1.821 kvar=0.599 conn=wye kv=0.23 
+new load.772100000286155 bus1=187.1.0 phases=1 kw=3.079 kvar=1.012 conn=wye kv=0.23 
+new load.772100000284338 bus1=2014.1.0 phases=1 kw=1.746 kvar=0.574 conn=wye kv=0.23 
+new load.772100000284218 bus1=979.1.0 phases=1 kw=2.896 kvar=0.952 conn=wye kv=0.23 
+new load.772100000283102 bus1=2353.1.0 phases=1 kw=1.775 kvar=0.583 conn=wye kv=0.23 
+new load.772100000285806 bus1=2348.1.0 phases=1 kw=2.978 kvar=0.979 conn=wye kv=0.23 
+new load.772100000282775 bus1=2469.1.0 phases=1 kw=5.227 kvar=1.718 conn=wye kv=0.23 
+new load.772100000281751 bus1=1578.1.0 phases=1 kw=4.181 kvar=1.374 conn=wye kv=0.23 
+new load.772100000285214 bus1=2475.1.0 phases=1 kw=2.363 kvar=0.777 conn=wye kv=0.23 
+new load.772100000283460 bus1=2487.1.0 phases=1 kw=6.396 kvar=2.102 conn=wye kv=0.23 
+new load.772100001000643 bus1=1699.1.0 phases=1 kw=2.842 kvar=0.934 conn=wye kv=0.23 
+new load.772100000281450 bus1=1590.1.0 phases=1 kw=3.028 kvar=0.995 conn=wye kv=0.23 
+new load.772100000285790 bus1=1724.1.0 phases=1 kw=1.752 kvar=0.576 conn=wye kv=0.23 
+new load.772100000283101 bus1=2366.1.0 phases=1 kw=1.781 kvar=0.585 conn=wye kv=0.23 
+new load.772100000285789 bus1=1341.1.0 phases=1 kw=1.752 kvar=0.576 conn=wye kv=0.23 
+new load.772100000284854 bus1=903.1.0 phases=1 kw=2.302 kvar=0.757 conn=wye kv=0.23 
+new load.772100000281625 bus1=1162.1.0 phases=1 kw=8.287 kvar=2.724 conn=wye kv=0.23 
+new load.772100000285216 bus1=2328.1.0 phases=1 kw=1.758 kvar=0.578 conn=wye kv=0.23 
+new load.772100000285788 bus1=1462.1.0 phases=1 kw=1.843 kvar=0.606 conn=wye kv=0.23 
+new load.772100000282850 bus1=2474.1.0 phases=1 kw=3.762 kvar=1.237 conn=wye kv=0.23 
+new load.772100000284339 bus1=2400.1.0 phases=1 kw=1.743 kvar=0.573 conn=wye kv=0.23 
+new load.772100000282098 bus1=911.1.0 phases=1 kw=5.583 kvar=1.835 conn=wye kv=0.23 
+new load.772100000283762 bus1=1150.1.0 phases=1 kw=2.347 kvar=0.771 conn=wye kv=0.23 
+new load.772100000281675 bus1=1659.1.0 phases=1 kw=5.217 kvar=1.715 conn=wye kv=0.23 
+new load.772100000283333 bus1=1553.1.0 phases=1 kw=2.716 kvar=0.893 conn=wye kv=0.23 
+new load.772100000282212 bus1=1883.1.0 phases=1 kw=6.754 kvar=2.22 conn=wye kv=0.23 
+new load.772100000283926 bus1=2088.1.0 phases=1 kw=5.328 kvar=1.751 conn=wye kv=0.23 
+new load.772100000282249 bus1=1046.1.0 phases=1 kw=3.105 kvar=1.021 conn=wye kv=0.23 
+new load.772100001000622 bus1=1246.1.0 phases=1 kw=5.405 kvar=1.777 conn=wye kv=0.23 
+new load.772100000283764 bus1=1614.1.0 phases=1 kw=2.53 kvar=0.832 conn=wye kv=0.23 
+new load.772100000281962 bus1=2110.1.0 phases=1 kw=3.039 kvar=0.999 conn=wye kv=0.23 
+new load.772100000286136 bus1=1814.1.0 phases=1 kw=1.809 kvar=0.595 conn=wye kv=0.23 
+new load.772100000284168 bus1=78.1.0 phases=1 kw=2.392 kvar=0.786 conn=wye kv=0.23 
+new load.772100000284280 bus1=158.1.0 phases=1 kw=5.74 kvar=1.887 conn=wye kv=0.23 
+new load.772100000285810 bus1=912.1.0 phases=1 kw=1.769 kvar=0.581 conn=wye kv=0.23 
+new load.772100000286621 bus1=955.1.0 phases=1 kw=2.542 kvar=0.835 conn=wye kv=0.23 
+new load.772100000283710 bus1=2019.1.0 phases=1 kw=4.612 kvar=1.516 conn=wye kv=0.23 
+new load.772100000936793 bus1=2449.1.0 phases=1 kw=4.004 kvar=1.316 conn=wye kv=0.23 
+new load.772100000283014 bus1=942.1.0 phases=1 kw=1.764 kvar=0.58 conn=wye kv=0.23 
+new load.772100000283709 bus1=2160.1.0 phases=1 kw=4.277 kvar=1.406 conn=wye kv=0.23 
+new load.772100000283448 bus1=2385.1.0 phases=1 kw=6.064 kvar=1.993 conn=wye kv=0.23 
+new load.772100000285808 bus1=1151.1.0 phases=1 kw=1.772 kvar=0.582 conn=wye kv=0.23 
+new load.772100000282962 bus1=1130.1.0 phases=1 kw=0.879 kvar=0.289 conn=wye kv=0.23 
+new load.772100000283200 bus1=2418.1.0 phases=1 kw=6.073 kvar=1.996 conn=wye kv=0.23 
+new load.772100000281460 bus1=1870.1.0 phases=1 kw=11.879 kvar=3.904 conn=wye kv=0.23 
+new load.772100000283626 bus1=2205.1.0 phases=1 kw=2.572 kvar=0.845 conn=wye kv=0.23 
+new load.772100000283104 bus1=1237.1.0 phases=1 kw=2.095 kvar=0.689 conn=wye kv=0.23 
+new load.772100000283100 bus1=189.1.0 phases=1 kw=2.684 kvar=0.882 conn=wye kv=0.23 
+new load.772100000286465 bus1=1401.1.0 phases=1 kw=1.784 kvar=0.586 conn=wye kv=0.23 
+new load.772100000283332 bus1=2099.1.0 phases=1 kw=2.892 kvar=0.95 conn=wye kv=0.23 
+new load.772100000283706 bus1=2270.1.0 phases=1 kw=2.771 kvar=0.911 conn=wye kv=0.23 
+new load.772100000283198 bus1=1820.1.0 phases=1 kw=2.884 kvar=0.948 conn=wye kv=0.23 
+new load.772100000281451 bus1=1357.1.0 phases=1 kw=3.076 kvar=1.011 conn=wye kv=0.23 
+new load.772100000285218 bus1=1581.1.0 phases=1 kw=1.785 kvar=0.587 conn=wye kv=0.23 
+new load.1648 bus1=811.1.0 phases=1 kw=0.484 kvar=0.363 conn=wye kv=0.23 
+new load.772100000284385 bus1=2212.1.0 phases=1 kw=2.741 kvar=0.901 conn=wye kv=0.23 
+new load.772100000282553 bus1=1887.1.0 phases=1 kw=5.121 kvar=1.683 conn=wye kv=0.23 
+new load.772100000282747 bus1=2185.1.0 phases=1 kw=3.397 kvar=1.116 conn=wye kv=0.23 
+new load.772100000283715 bus1=1455.1.0 phases=1 kw=2.818 kvar=0.926 conn=wye kv=0.23 
+new load.772100000285215 bus1=2015.1.0 phases=1 kw=1.754 kvar=0.577 conn=wye kv=0.23 
+new load.772100000284850 bus1=1807.1.0 phases=1 kw=2.298 kvar=0.755 conn=wye kv=0.23 
+new load.772100000282119 bus1=2508.1.0 phases=1 kw=2.897 kvar=0.952 conn=wye kv=0.23 
+new load.772100000285812 bus1=2284.1.0 phases=1 kw=1.77 kvar=0.582 conn=wye kv=0.23 
+new load.772100000281679 bus1=1173.1.0 phases=1 kw=4.812 kvar=1.582 conn=wye kv=0.23 
+new load.772100000281846 bus1=1172.1.0 phases=1 kw=3.414 kvar=1.122 conn=wye kv=0.23 
+new load.772100000284337 bus1=1852.1.0 phases=1 kw=1.789 kvar=0.588 conn=wye kv=0.23 
+new load.772100000283380 bus1=2500.1.0 phases=1 kw=4.947 kvar=1.626 conn=wye kv=0.23 
+new load.772100000281617 bus1=2517.1.0 phases=1 kw=3.399 kvar=1.117 conn=wye kv=0.23 
+new load.772100000286139 bus1=2268.1.0 phases=1 kw=1.797 kvar=0.591 conn=wye kv=0.23 
+new load.772100000282883 bus1=2229.1.0 phases=1 kw=3.734 kvar=1.227 conn=wye kv=0.23 
+new load.772100000281581 bus1=1838.1.0 phases=1 kw=5.297 kvar=1.741 conn=wye kv=0.23 
+new load.772100000282466 bus1=2504.1.0 phases=1 kw=4.33 kvar=1.423 conn=wye kv=0.23 
+new load.772100000283602 bus1=2230.1.0 phases=1 kw=2.542 kvar=0.836 conn=wye kv=0.23 
+new load.772100000286235 bus1=1626.1.0 phases=1 kw=2.905 kvar=0.955 conn=wye kv=0.23 
+new load.772100000282063 bus1=1285.1.0 phases=1 kw=8.138 kvar=2.675 conn=wye kv=0.23 
+new load.772100000285791 bus1=2136.1.0 phases=1 kw=1.784 kvar=0.586 conn=wye kv=0.23 
+new load.772100000281980 bus1=2075.1.0 phases=1 kw=4.41 kvar=1.45 conn=wye kv=0.23 
+new load.772100000281414 bus1=1040.1.0 phases=1 kw=8.073 kvar=2.653 conn=wye kv=0.23 
+new load.452 bus1=841.1.0 phases=1 kw=8.235 kvar=6.176 conn=wye kv=0.23 
+new load.772100000282251 bus1=128.1.0 phases=1 kw=2.987 kvar=0.982 conn=wye kv=0.23 
+new load.772100000283176 bus1=1786.1.0 phases=1 kw=4.156 kvar=1.366 conn=wye kv=0.23 
+new load.94 bus1=824.1.0 phases=1 kw=24.932 kvar=18.699 conn=wye kv=0.23 
+new load.772100000281283 bus1=1666.1.0 phases=1 kw=3.18 kvar=1.045 conn=wye kv=0.23 
+new load.772100000286622 bus1=1025.1.0 phases=1 kw=1.757 kvar=0.578 conn=wye kv=0.23 
+new load.772100000283604 bus1=2279.1.0 phases=1 kw=2.505 kvar=0.823 conn=wye kv=0.23 
+new load.772100000282602 bus1=2373.1.0 phases=1 kw=3.632 kvar=1.194 conn=wye kv=0.23 
+new load.772100000283763 bus1=2056.1.0 phases=1 kw=2.625 kvar=0.863 conn=wye kv=0.23 
+new load.772100000283605 bus1=1909.1.0 phases=1 kw=3.191 kvar=1.049 conn=wye kv=0.23 
+new load.772100000281091 bus1=2083.1.0 phases=1 kw=4.227 kvar=1.389 conn=wye kv=0.23 
+new load.772100000284340 bus1=2436.1.0 phases=1 kw=2.25 kvar=0.739 conn=wye kv=0.23 
+new load.772100001000624 bus1=2094.1.0 phases=1 kw=5.81 kvar=1.91 conn=wye kv=0.23 
+new load.947 bus1=822.1.0 phases=1 kw=9.427 kvar=7.07 conn=wye kv=0.23 
+new load.772100000282230 bus1=2492.1.0 phases=1 kw=5.166 kvar=1.698 conn=wye kv=0.23 
+new load.772100000283449 bus1=1762.1.0 phases=1 kw=5.686 kvar=1.869 conn=wye kv=0.23 
+new load.772100000284531 bus1=1803.1.0 phases=1 kw=2.784 kvar=0.915 conn=wye kv=0.23 
+new load.772100000281733 bus1=905.1.0 phases=1 kw=4.089 kvar=1.344 conn=wye kv=0.23 
+new load.772100000283883 bus1=2013.1.0 phases=1 kw=3.186 kvar=1.047 conn=wye kv=0.23 
+new load.772100000282857 bus1=947.1.0 phases=1 kw=4.292 kvar=1.411 conn=wye kv=0.23 
+new load.772100000283013 bus1=1658.1.0 phases=1 kw=1.759 kvar=0.578 conn=wye kv=0.23 
+new load.772100000279798 bus1=1196.1.0 phases=1 kw=5.787 kvar=1.902 conn=wye kv=0.23 
+solve
