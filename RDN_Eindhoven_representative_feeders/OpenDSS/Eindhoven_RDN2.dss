@@ -1,5 +1,5 @@
 clear
-New Circuit.RDN1 basekv=10 pu=1.0
+New Circuit.RDN2 basekv=10 pu=1.0
 edit Vsource.Source bus1=source basekv=10 pu=1.0001 phases=3 ISC3=9000  ISC1=5000
 ! Transformer data 
 new transformer.47 buses = [Source.1.2.3.0 2577.1.2.3.0] phases=3 windings=2 XHL = 4.0 %LoadLoss=1.325 Conns=[WYE WYE] kVs=[10.0 0.4] kVAs=[630000.0 630000.0] 

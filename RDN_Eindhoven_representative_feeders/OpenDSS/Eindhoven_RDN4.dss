@@ -1,5 +1,5 @@
 clear
-New Circuit.RDN1 basekv=10 pu=1.0
+New Circuit.RDN4 basekv=10 pu=1.0
 edit Vsource.Source bus1=source basekv=10 pu=1.0001 phases=3 ISC3=9000  ISC1=5000
 edit Vsource.Source bus1=source basekv=10 pu=1.0001 phases=3 ISC3=9000  ISC1=5000
 ! Transformer data 
