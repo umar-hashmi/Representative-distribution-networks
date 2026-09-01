@@ -62,13 +62,17 @@ Contributions to provide these representative feeders/networks into more formats
 If you use the data or code in this repository, please cite the following publication:
 
 ```
-@article{hashmi2025identifying,
-  title={Identifying representative LV feeders, networks and reconfigurable test cases using European publicly available data sets},
-  author={ },
-  journal={ },
-  volume={ },
-  pages={ },
-  year={2025},
-  publisher={ }
+@article{HASHMI2026128752,
+title = {Identifying representative LV feeders, networks and reconfigurable test cases using European publicly available datasets},
+journal = {Applied Energy},
+volume = {426},
+pages = {128752},
+year = {2026},
+issn = {0306-2619},
+doi = {https://doi.org/10.1016/j.apenergy.2026.128752},
+url = {https://www.sciencedirect.com/science/article/pii/S030626192601408X},
+author = {Md Umar Hashmi and Sari Kerckhove and Mohamed Numair and Hossein Fani and Hélène Ponsaerts and Alexandre M.V. Gouveia and Marta Vanin and Dirk {Van Hertem} and Geert Deconinck},
+keywords = {Distribution networks, Reconfigurable networks, Low voltage, Clustering, Electrical parameters, Graphical parameters, Geographical parameters, Representative feeders, Reference networks},
+abstract = {Given the vast number of feeders and distribution network (DN) models, selecting representative sets is essential for evaluating algorithms, assessing policy impacts, and analyzing new infrastructure investments. This paper introduces a novel framework to identify representative feeders (RFs), distribution networks (RDNs), and reconfigurable DNs (RRDNs). The framework employs a systematic methodology for feature extraction, outlier detection, normalization, feature selection, and clustering. Unlike previous studies, which primarily focused on cluster centers (i.e., the most representative feeder within a cluster), our approach also accounts for the least representative feeders within each cluster. It is crucial to identify these extreme test cases for a holistic evaluation. We propose a novel criterion for selecting the least RF for each cluster and also discuss alternative criteria. The choice of criterion may vary depending on the application’s purpose. We categorize the extracted features into graphical, electrical, geographical, and load-based attributes. The framework is applied to three publicly available datasets from the UK, Spain and the Netherlands, resulting in the identification of 4 RFs for the British dataset, 6 RFs for the Spanish dataset, and 4 RDNs for the Dutch dataset from Eindhoven. Additionally, we pioneered the identification of RRDNs for the Spanish dataset, analyzing graphical and electrical features such as the number of feeders, radial configurations, graph cycles, and reconfigurable switches, identifying 5 RRDNs. We provide a detailed repository with the identified RFs, RDNs, and RRDNs in multiple data formats compatible with widely employed open-source power flow solvers to facilitate reuse and reproducibility. The goal of the repository is to facilitate and benchmark smart grid research and transparent development applied to European low-voltage DNs. Finally, this study also summarizes and analyzes publicly available datasets for representative European DNs.}
 }
 ```
